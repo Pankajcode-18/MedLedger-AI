@@ -1,151 +1,286 @@
-# AI Blockchain Electronic Health Records Management System
+# MedLedger AI
 
+**Health records that patients control.** MedLedger AI keeps medical reports from hospitals, clinics and labs in one place. Every file is locked (AES-256-GCM) before it is stored. The patient decides which doctors can open it. Each upload and each sharing decision is written to a record history that can be checked, and optionally to an Ethereum smart contract. A built-in AI assistant explains reports in plain words, charts readings over time and flags medicines that may not mix.
 
-## Introduction
+It has workspaces for **patients, doctors, hospitals, diagnostic labs, insurers and system administrators**. It works in **English, नेपाली and हिन्दी**, and on phones.
 
-An Electronic Health Record (EHR) is an electronic version of a patient’s medical history that is maintained by a hospital or other organization over time. It includes all key administrative clinical data relevant to the patient along with all previous reports, X-rays, laboratory data, prescriptions and other forms of data describing past medical history. EHRs aren’t the boon to healthcare that everyone expected. They were introduced to make it easier for doctors to record and track patient’s data, improve care and the most important, support interoperability between multiple healthcare organizations.
+| Patient home | Sharing with a doctor |
+|---|---|
+| ![Patient home](docs/screenshots/patient-home.png) | ![Sharing](docs/screenshots/patient-sharing.png) |
+| **Doctor: records patients shared** | **Admin: record history on Ethereum** |
+| ![Doctor records](docs/screenshots/doctor-records.png) | ![Record history](docs/screenshots/admin-record-history.png) |
+| **Readings over time** | **In Nepali** |
+| ![Charts](docs/screenshots/patient-charts.png) | ![Nepali](docs/screenshots/patient-home-nepali.png) |
 
-The biggest challenges are security and interoperability, which makes maintaining these records a very tedious task. Further, it is a struggle for doctors to decode important information that the patient’s previous provider recorded. Thus, it is time to develop a new system based on effectively secure decentralized blockchain and a powerful AI algorithm to ease the processes involved in healthcare.
+---
 
-## Objective of the Project
+## Contents
 
-The objective of our project is the evolution of Electronic Health Records to give healthcare providers access to various benefits for providing patients with the best care. Following are the benefits our system aims at:
+1. [What it does](#what-it-does)
+2. [How it fits together](#how-it-fits-together)
+3. [Quick start](#quick-start)
+4. [Demo accounts](#demo-accounts)
+5. [Blockchain: local chain and Sepolia](#blockchain-local-chain-and-sepolia)
+6. [Settings (environment variables)](#settings-environment-variables)
+7. [Tests](#tests)
+8. [Project layout](#project-layout)
+9. [API overview](#api-overview)
+10. [Security notes and deployment](#security-notes-and-deployment)
 
-* Collaboration Among Healthcare Organization-
-With our system, providers across multiple specialties and different geographical locations can collaborate with great confidence for better treatment of patients. Blockchain makes this possible by giving the healthcare industry one consistent, standard database of real-time patient data to work with.
+---
 
-* Safe Data Exchanges
-One of the biggest challenges is of sharing data securely in compliance with data safety regulations. Also due to patients not having an option to choose what they want to share they deny access to all of their protected health information to avoid any privacy related issues. Blockchain makes the data safe and also provides comprehensive data sharing options, allowing patients to unlock only the data that their healthcare providers need and keeping rest of the data private and secure.
+## What it does
 
-* Valuable Insights for Better Care 
-One of the complications of EHRs is the huge amount of data that is created every day. It can be a very tedious task for doctors to go through this vast data every time and might also lead to missing important data in between. AI programs in our system can help ease the physician’s work by extracting the most valuable information on analysis of the patient’s medical history. 
+**Patients**
+- Upload reports as PDF, Word or photo files. Scanned pages are read with OCR on the server, so nothing is sent out.
+- Decide who can see their records: answer doctors' requests, share with a doctor found by search, and stop sharing at any time. They can also confirm each change in MetaMask.
+- See every upload, share and file opening in their Activity, written as sentences, for example "Dr. Anil Sharma opened your Blood test".
+- Get plain-language report explanations, charts of blood pressure, sugar and other readings, and warnings about medicine interactions.
+- Check that a file is unchanged since upload.
 
-## Motivation :
+**Doctors**
+- Ask patients for access, open the records patients share, write prescriptions and notes.
+- Get AI help with chart summaries, lab triage, drug interactions and SOAP notes. Personal details are removed before any text reaches an external AI.
 
-We are living in an era where we are generating health data at an unprecedented rate, and storing this data on paper is technically impossible. This led to the introduction of Electronic Health Records (EHRs) in the previous few years. However, its benefits have never been properly utilized by healthcare providers due to lack of security and interoperability. The data stored in hospitals and other related organization is vulnerable to various security threats such as single point of failure and typical DDos attacks. Further it is needless to store the same patient’s records at different hospitals when it is possible to have one common database. Security being one of the aspects of our motivation, the other is getting relevant information out of patient’s vast medical history in less time. A lot of time is wasted by a doctor to go through the patient’s entire health records, which instead could have been utilized for better treatment of a patient. Thus, there is a need for a decentralized system to store medical records which can be secure as well as insightful helping the healthcare providers efficiently treat and care for a patient.
+**Hospitals, labs and insurers**
+- Hospitals manage staff, admissions and prescriptions.
+- Labs track samples, upload results and check that a report is unchanged.
+- Insurers review claims using documents that patients chose to attach.
 
-## Existing System vs Proposed System
+**Administrators**
+- Manage accounts and organisations.
+- See real sign-in and security figures.
+- Browse the whole record history, with a link check and each entry's Ethereum transaction.
 
-### Existing System
+**Protections**
+- **Files:** every file has its own AES-256-GCM key, and that key is wrapped by a master key. The SHA-256 fingerprint of the original is kept and checked whenever the file is opened. If one byte of the stored file changes, the download is refused and the change is logged.
+- **Stored lists:** lists that hold personal data (readings, chats, prescriptions, claims and similar) are stored encrypted.
+- **Accounts:** passwords use bcrypt. Too many wrong passwords lock the account, and sign-in requests are rate-limited. Sessions can be ended one by one.
+- **Access:** every request is checked by role, and doctors can only open records a patient has shared with them.
 
-The existing system utilized by healthcare providers to store patient data is an electronic system in which health records are created and managed in digital formats. The health records can consist of medical history including operations, hospitalizations, doctor’s prescriptions, medications, past diagnostic follow ups, lab reports or results and other administration related documents. This system is highly efficient over the former paper-based records which were ineffective and unreliable. However, the present system lacks on security and involves a lot of redundant data, eventually making it a very tedious task for doctors to go through them every time. 
+---
 
-### Proposed System
+## How it fits together
 
-We propose on building an AI-Blockchain Electronic Health Records system on a web application using Flask web framework. The application will be integrated with Etherium based blockchain to make the patient’s data secure using reliable transactions. In our healthcare system a transaction equates to patients’ hospital visits, administration documents, diagnoses reports, treatment details, physician’s notes, laboratory results or reports, prescriptions, X-rays, outcomes etc. With our system, patients will have data sharing options. They now will have the right to choose what part of their medical history can be viewed by healthcare providers according to their need while keeping rest of the data private and secure. The system will also be powered by an AI algorithm based on machine learning and Natural Language Processing (NLP) to gain valuable insights and intuition from patient’s medical history. This model will be very useful for healthcare providers to treat their patients properly and efficiently. Blockchain being decentralized promotes interoperability across different hospitals or organizations and hence everyone can make use of one standard system to store health data.
+```mermaid
+flowchart LR
+  subgraph Browser
+    UI["React client<br/>(Vite, Tailwind)<br/>EN / ने / हि"]
+    MM["MetaMask<br/>(optional)"]
+  end
+  subgraph Server["Express API (Node.js, TypeScript)"]
+    AUTH["Accounts, JWT,<br/>roles"]
+    CONSENT["Permissions<br/>(consent list)"]
+    VAULT["Record vault<br/>AES-256-GCM + SHA-256"]
+    AI["AI engine<br/>built-in rules + optional GPT-4o<br/>(personal details removed first)"]
+    LEDGER["Record history<br/>(hash-linked, saved)"]
+  end
+  STORE[("state.json<br/>encrypted lists<br/>+ encrypted files<br/>or MongoDB / GridFS")]
+  CHAIN[["HealthRecords.sol<br/>Hardhat local or Sepolia"]]
 
-## Tech Stacks Used
-
-* **IBM's Hyperledger Fabric Blockchain Platform** 
-* **MEVN Stack**
-
-## Social Impact of Project 
-
-Our system aims at easing the work of healthcare providers by securing medical data as well as by gaining important and relevant information from a patient’s medical history. By saving a lot of time and resources wasted in maintaining health records otherwise, doctors can utilize this time for better and efficient treatment of patients. Great care of patients will ultimately lead to a healthier society with first class healthcare providers. Hence our project has a great positive social and environmental impact.
-
-## How to run
-
-### Tools required:
-* VS Code Editor <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi8qoOwh67qAhX9xjgGHU1BCs4QjBAwAXoECAUQAg&url=https%3A%2F%2Fcode.visualstudio.com%2Fdownload&usg=AOvVaw11fc5fOXYIyxQh75jYLjXg">(Refer this for installation)</a>
-* IBM Blockchain Platform extension on VS code <a href="https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform">(Refer this for installation)</a>
-
-* Docker Desktop <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjvrbKEh67qAhUzzTgGHXwuB_sQFjACegQIDBAG&url=https%3A%2F%2Fdocs.docker.com%2Fdocker-for-windows%2Finstall%2F&usg=AOvVaw2zo9suoRfAYuT_3irhySPG">(Refer this for installation)</a>
-
-
-### Installation of used Libraries
-~~~
-apt-get install python-software-properties
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash –
-apt-get install nodejs
-
-npm install -g @vue/cli
-npm install axios
-npm install formidable
-
-sudo apt install python3
-pip install glob
-pip install docx2txt
-pip install networkx
-pip install sklearn
-pip install re
-pip install nltk
-pip install unicodedata
-pip install pattern3
-~~~
-
-### Steps to run
-
-1. Git Clone this repository to your system
+  UI -- REST --> AUTH
+  UI --> CONSENT
+  UI --> VAULT
+  UI --> AI
+  VAULT --> STORE
+  CONSENT --> STORE
+  CONSENT --> LEDGER
+  VAULT --> LEDGER
+  LEDGER -- "registerRecordFor / grantAccessFor / revokeAccessFor<br/>(server relayer)" --> CHAIN
+  MM -- "grantAccess / revokeAccess<br/>(patient signs)" --> CHAIN
+  MM -. "Sign-In with Ethereum, EIP-712 consent" .-> AUTH
 ```
-git clone https://github.com/yashverma9/AI-Blockchain-Electronic-Health-Records-Management-System
-```
 
-2. Start Docker Desktop on your system
+**Who can see a record** is decided in one place: the permission list, kept per patient and per doctor. The dashboard counts, record lists, downloads and notifications all read that list.
 
-3. In the terminal navigate to the repository directory
-```
+**The record history** is a list where each entry includes the hash of the one before it. It is saved with the server state, so it survives restarts, and any edit to an old entry breaks the links after it. When a contract is set up, each entry is also sent to Ethereum in the background:
+
+- **An upload** is sent as `registerRecordFor(patient, fingerprint)`.
+- **Sharing** is sent as `grantAccessFor(patient, doctor)`.
+- **Stopping sharing** is sent as `revokeAccessFor(patient, doctor)`.
+- **A change the patient confirmed in MetaMask** was already sent by the patient's own wallet as `grantAccess` or `revokeAccess`. MedLedger records that transaction instead of sending a second one.
+
+Only fingerprints and pseudonymous addresses go on the chain, never medical content or names.
+
+---
+
+## Quick start
+
+You need **Node.js 20 or newer** and npm. MongoDB is optional; without it everything is stored in `apps/server/state.json` and an encrypted-files folder.
+
+```bash
+git clone <this repository>
 cd AI-Blockchain-Electronic-Health-Records-Management-System
-```
-4. Open VS Code in the same directory
-```
-code .
-```
+npm run install:all                     # root (contract tools) + apps/server + apps/client
 
-5. Open the IBM Blockchain Platform extension. Start a new fabric runtime using default template of 2 ORG, 2CA. Package the contract folder using the 'PACKAGE OPEN PROJECT' option. Now install and instantiate the smart contract on the peers. Export the connection profile to server folder and the wallets as well. <a href="https://developer.ibm.com/tutorials/ibm-blockchain-platform-vscode-smart-contract/">(Refer this for more detailed steps)</a>
+cp apps/server/.env.example apps/server/.env
+cp apps/client/.env.example apps/client/.env
+# In apps/server/.env, set JWT_SECRET to a long random value:
+#   node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"
 
-6. Open two terminals simultaneously in VS Code.
-
-7. In the 1st terminal start the server side
-```
-cd web-app/server
-npm install
-npm start
+npm run dev:server                      # API on http://localhost:8080
+npm run dev:client                      # app on http://localhost:8081 (second terminal)
 ```
 
-8. In the 2nd terminal start the client side
+Open http://localhost:8081 and choose **Try a demo** on the sign-in page.
+
+- **Master key.** In development the server creates `apps/server/.medledger-master.key` on first start. Back it up: without it, stored files cannot be opened. In production, set `MASTER_ENCRYPTION_KEY` instead.
+- **AI.** Without `OPENAI_API_KEY` the built-in engine is used and no data leaves the server.
+
+---
+
+## Demo accounts
+
+These accounts are created while `DEMO_ACCOUNTS=true` (the default outside production). A yellow banner marks sample data.
+
+| Role | Email | Password |
+|---|---|---|
+| Patient | patient@medledger.demo | secret99 |
+| Doctor | doctor@medledger.demo | secret99 |
+| Hospital | hospital@medledger.demo | hospital123 |
+| Lab | lab@medledger.demo | lab123 |
+| Insurance | insurance@medledger.demo | insurance123 |
+| Administrator | admin@medledger.demo | admin123 |
+
+---
+
+## Blockchain: local chain and Sepolia
+
+The app works with no chain at all: the record history is then kept on the server only, and the admin page says so. To also write the history to the `HealthRecords` contract, use either a local chain or Sepolia.
+
+**Local chain (no real ETH needed)**
+
+```bash
+npm run chain:node          # terminal 1: Hardhat node on http://127.0.0.1:8545
+npm run deploy:local        # terminal 2: deploys and fills in apps/server/.env
+npm run dev:server          # restart the API; it logs "[Ledger] Writing to the HealthRecords contract …"
+# use the app (upload, share, stop sharing), then:
+npm run chain:events:local  # lists RecordAdded / AccessGranted / AccessRevoked events
 ```
-cd web-app/client
-npm install
-npm run serve
+
+For MetaMask on the local chain, add network `http://127.0.0.1:8545` with chain ID 31337, and import one of the test accounts that `chain:node` prints.
+
+**Sepolia test network**
+
+1. Create a new wallet account for the server. Get a little Sepolia ETH from a faucet, and an RPC URL from Alchemy or Infura.
+2. In the root `.env`, set `SEPOLIA_RPC_URL` and `SEPOLIA_PRIVATE_KEY` for that account. See `.env.example`.
+3. Run `npm run deploy:sepolia`. This prints the contract address and its Etherscan link, writes `blockchain/deployments/sepolia.json`, and sets `HEALTH_RECORDS_CONTRACT_ADDRESS` and `WALLET_CHAIN_ID=11155111` in `apps/server/.env`.
+4. In `apps/server/.env`, set `CHAIN_RPC_URL` (the same RPC URL) and `CHAIN_PRIVATE_KEY` (the same account). The deploying account is the contract's **relayer**, the only account allowed to call the `…For` functions. It can be handed over with `setRelayer`.
+5. Restart the server. Share and then stop sharing as a patient. Then run `npm run chain:events:sepolia`, or open **Admin → Record history**, where each entry links to its transaction on sepolia.etherscan.io.
+
+Transactions are sent one at a time in the background, so pages never wait for the network. Anything not yet sent when the server stops is sent after the next start. Failures are shown on the admin page.
+
+**The contract** (`blockchain/contracts/HealthRecords.sol`, Solidity 0.8.20)
+
+| Function | Who calls it |
+|---|---|
+| `registerRecord(bytes32)`, `grantAccess(address)`, `revokeAccess(address)` | the patient's own wallet (MetaMask) |
+| `registerRecordFor(address,bytes32)`, `grantAccessFor(address,address)`, `revokeAccessFor(address,address)` | the MedLedger relayer, for patients without a wallet |
+| `hasAccess`, `verifyRecord`, `getRecordDetails`, `getPatientRecords` | read-only checks |
+| `logAccess(address,string)`, `setRelayer(address)` | audit note; hand over the relayer role |
+
+Events: `RecordAdded`, `AccessGranted`, `AccessRevoked`, `AccessLogged`, `RelayerChanged`.
+
+---
+
+## Settings (environment variables)
+
+These go in `apps/server/.env`; `.env.example` explains every line. The most important:
+
+| Variable | What it does |
+|---|---|
+| `JWT_SECRET` | Signs sign-in tokens. **Required** in production (32+ random characters). |
+| `MASTER_ENCRYPTION_KEY` | 64 hex characters that protect every file key. **Required** in production. **Back it up.** |
+| `MASTER_ENCRYPTION_KEYS_PREVIOUS` | Old master keys during a rotation (`npm run keys:rotate` in apps/server). |
+| `MONGODB_URI`, `FILE_STORAGE_BACKEND` | Use MongoDB + GridFS (`gridfs`), local files (`local`) or whichever is available (`auto`). |
+| `STATE_FILE_PATH` | Where the JSON state (with encrypted lists) is kept. |
+| `CLIENT_ORIGINS`, `CLIENT_URL` | Front-end addresses allowed to call the API. |
+| `DEMO_ACCOUNTS`, `EXPOSE_RESET_TOKEN` | Demo accounts and showing reset links in the page. **Set both to `false` in production.** |
+| `AUTH_RATE_LIMIT`, `MAX_FAILED_LOGINS`, `LOCKOUT_MINUTES`, `BCRYPT_ROUNDS` | Sign-in protection. |
+| `OPENAI_API_KEY`, `OPENAI_MODEL`, `AI_TIMEOUT_MS` | Optional external AI. Only text with personal details removed is sent. |
+| `OCR_ENABLED`, `OCR_LANGUAGES` | Reading scanned files (`eng`, or `eng+nep`). |
+| `WALLET_CHAIN_ID` | 11155111 (Sepolia) or 31337 (local). |
+| `HEALTH_RECORDS_CONTRACT_ADDRESS`, `CHAIN_RPC_URL`, `CHAIN_PRIVATE_KEY` | Write the record history to the contract (all three needed). |
+| `BLOCKCHAIN_MODE` | `auto` (default) or `simulated` (never write to a chain). |
+
+The client has one setting, `VITE_API_URL` in `apps/client/.env`, which is the API address.
+
+---
+
+## Tests
+
+```bash
+npm test            # contract (Hardhat) + server (node:test) + client (Vitest)
+npm run test:e2e    # browser tests (Playwright); first time: cd apps/client && npx playwright install chromium
 ```
 
-9. Your application is running, go to the link specified to open it!
+| Suite | Where | What it covers |
+|---|---|---|
+| Contract, 18 tests | `blockchain/test/HealthRecords.test.js` | Records, sharing, tamper checks, audit events, relayer-only functions |
+| Server, 171 tests | `apps/server/tests/*.test.ts` | Accounts, lockout, sessions, AI and de-identification, encryption and tamper detection, OCR, trends, MetaMask sign-in and consent, the Phase 1–3 APIs, the record history. `chain.test.ts` starts a Hardhat node, deploys the contract and checks that uploads and sharing become confirmed transactions. |
+| Client, 22 tests | `apps/client/src/__tests__` | Registration form, password rules, the trend chart, the MetaMask flow (mocked wallet), friendly error messages, dates, Nepali and Hindi switching |
+| Browser, 23 tests | `apps/client/e2e` | Patient uploads → shares → doctor opens → lab checks the fingerprint → admin sees the history → patient stops sharing → doctor loses access. Every page of every role opens; roles cannot open each other's pages; languages; phone layout. |
 
+Two more checks are in `docs/ui-audit`:
 
-## Implementation Demo : 
+- `plain-language-audit.js` scores every page for jargon. All 56 pages score 9.7 or higher out of 10.
+- `translation-coverage.js` lists any app text still in English on the Nepali or Hindi pages.
 
-### 1. Home Page
-<br>
-<p align="center">
-  <img src="gif/Home.gif">
-</p>
-<br>
+---
 
-### 2. Patient Home
-<br>
-<p align="center">
-  <img src="gif/Patient-Login-Without-Permission.gif">
-</p>
-<br>
+## Project layout
 
+```
+apps/
+  client/            React + TypeScript app (Vite, Tailwind, zustand)
+    src/features/    one folder per workspace (patient, doctor, hospital, laboratory, insurance, admin, ai, …)
+    src/i18n/        language switcher and Nepali / Hindi texts
+    e2e/             Playwright tests
+    scripts/         i18n-missing.cjs lists new text that needs translating
+  server/            Express + TypeScript API
+    src/services/    recordVault (encryption), consentService, blockchainService (record history + contract),
+                     aiService, deidentify, textExtraction (PDF/OCR), walletService (MetaMask), …
+    tests/           node:test suites
+blockchain/
+  contracts/         HealthRecords.sol
+  scripts/           deploy.js, events.js
+  test/              contract tests
+docs/
+  screenshots/       images used in this README
+  ui-audit/          plain-language and translation checks with their results
+  DEPLOYMENT.md      production checklist
+  PAPER-UPDATES.md   updated System and Results text for the paper
+legacy/              the original Vue 2 app and backend, kept for reference (not used)
+```
 
-### 3. Doctor asking for permission from patient
-<br>
-<p align="center">
-  <img src="gif/Doctor-Logins-Asks-Permission.gif">
-</p>
-<br>
+---
 
-### 4. Patient grants permission to the doctor for the specific report
-<br>
-<p align="center">
-  <img src="gif/Patient-Logins-Grants-Permission.gif">
-</p>
-<br>
+## API overview
 
-### 5. Doctor view reports and summary of the reports
-<br>
-<p align="center">
-  <img src="gif/Doctor-Downloads-Report.gif">
-</p>
-<br>
+Every route except sign-in, registration, the public fingerprint check and `/health` needs `Authorization: Bearer <token>`.
+
+| Area | Routes |
+|---|---|
+| Accounts | `POST /api/auth/register · login · logout · logout-others · change-password · forgot-password · reset-password · demo`, `GET /api/auth/profile · sessions` |
+| Records | `POST /api/records/upload`, `GET /api/records`, `GET /api/records/:id/download · verify · text`, `POST /api/records/:id/extract`, `GET /api/summary` (dashboard counts) |
+| Sharing | `GET /api/access/status · doctors`, `POST /api/access/request · grant · decline · revoke` |
+| MetaMask | `GET /api/wallet/config`, `POST /api/wallet/link/challenge · link · consent/prepare · consent · consent/tx`, `POST /api/auth/wallet/challenge · login` |
+| AI | `POST /api/ai/summarize · analyze · trends · chat · drug · risk · deidentify`, `POST /api/ai/doctor/chart-synthesis · drug-interactions · lab-triage · soap-note` |
+| Readings, prescriptions | `/api/vitals`, `/api/prescriptions` |
+| Organisations | `/api/staff`, `/api/admissions`, `/api/samples`, `/api/claims`, `/api/policyholders`, `/api/organisations` |
+| Record history | `POST /api/blockchain/verify` (anyone), `GET /api/blockchain/blocks · status` (administrators) |
+| Admin | `GET /api/admin/stats · security · users · audit`, `POST /api/admin/users`, `PATCH /api/admin/users/:userId/status` |
+
+---
+
+## Security notes and deployment
+
+Before running MedLedger with real patients, work through [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). It covers master key backup, the production `.env`, MongoDB with GridFS, HTTPS, CORS, rate limits, turning demo mode off, and the relayer key.
+
+This is a research prototype and has not been certified for clinical use. The AI output is information to discuss with a doctor, not a diagnosis.
+
+---
+
+*The original Vue 2 version and its demo recordings are kept in `legacy/` and `docs/gif/`.*
+#   M e d L e d g e r - A I  
+ 
