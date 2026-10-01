@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const walletController_js_1 = require("../controllers/walletController.js");
+const auth_js_1 = require("../middleware/auth.js");
+const router = (0, express_1.Router)();
+router.get('/config', (req, res) => walletController_js_1.walletController.config(req, res));
+router.get('/status', (0, auth_js_1.authMiddleware)(), (req, res) => walletController_js_1.walletController.status(req, res));
+router.post('/link/challenge', (0, auth_js_1.authMiddleware)(), (req, res) => walletController_js_1.walletController.linkChallenge(req, res));
+router.post('/link', (0, auth_js_1.authMiddleware)(), (req, res) => walletController_js_1.walletController.link(req, res));
+router.delete('/link', (0, auth_js_1.authMiddleware)(), (req, res) => walletController_js_1.walletController.unlink(req, res));
+router.post('/consent/prepare', (0, auth_js_1.authMiddleware)('patient'), (req, res) => walletController_js_1.walletController.prepareConsent(req, res));
+router.post('/consent', (0, auth_js_1.authMiddleware)('patient'), (req, res) => walletController_js_1.walletController.submitConsent(req, res));
+router.post('/consent/tx', (0, auth_js_1.authMiddleware)('patient'), (req, res) => walletController_js_1.walletController.submitConsentTx(req, res));
+exports.default = router;

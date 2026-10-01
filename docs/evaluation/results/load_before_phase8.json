@@ -1,0 +1,294 @@
+{
+ "note": "Before Phase 8 (code as committed after Phase 7). Parsed from the run log; the \"page of 25\" parameters were not supported yet, so that row returned the full list.",
+ "records": 1001,
+ "results": [
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 1,
+   "throughput": 242,
+   "p50": 2.1,
+   "p95": 6.2,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 5,
+   "throughput": 168,
+   "p50": 13.1,
+   "p95": 267.5,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 10,
+   "throughput": 314,
+   "p50": 26.4,
+   "p95": 68.2,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 25,
+   "throughput": 101,
+   "p50": 34.0,
+   "p95": 963.5,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 50,
+   "throughput": 625,
+   "p50": 46.1,
+   "p95": 273.4,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 100,
+   "throughput": 669,
+   "p50": 70.5,
+   "p95": 538.6,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 1,
+   "throughput": 35,
+   "p50": 27.4,
+   "p95": 37.2,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 5,
+   "throughput": 57,
+   "p50": 79.8,
+   "p95": 142.4,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 10,
+   "throughput": 56,
+   "p50": 137.7,
+   "p95": 341.4,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 25,
+   "throughput": 61,
+   "p50": 210.7,
+   "p95": 1556.0,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 50,
+   "throughput": 59,
+   "p50": 407.3,
+   "p95": 3233.8,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 100,
+   "throughput": 53,
+   "p50": 958.1,
+   "p95": 7239.9,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 1,
+   "throughput": 39,
+   "p50": 24.4,
+   "p95": 36.0,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 5,
+   "throughput": 58,
+   "p50": 75.4,
+   "p95": 147.5,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 10,
+   "throughput": 56,
+   "p50": 139.1,
+   "p95": 305.4,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 25,
+   "throughput": 59,
+   "p50": 212.6,
+   "p95": 1580.7,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 50,
+   "throughput": 56,
+   "p50": 439.1,
+   "p95": 3369.9,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 100,
+   "throughput": 55,
+   "p50": 943.8,
+   "p95": 6886.9,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 1,
+   "throughput": 690,
+   "p50": 1.1,
+   "p95": 2.2,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 5,
+   "throughput": 1558,
+   "p50": 3.0,
+   "p95": 5.5,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 10,
+   "throughput": 1458,
+   "p50": 6.2,
+   "p95": 10.1,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 25,
+   "throughput": 2139,
+   "p50": 10.6,
+   "p95": 14.6,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 50,
+   "throughput": 1483,
+   "p50": 29.4,
+   "p95": 50.6,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 100,
+   "throughput": 1678,
+   "p50": 46.2,
+   "p95": 137.7,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 1,
+   "throughput": 9,
+   "p50": 117.7,
+   "p95": 140.2,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 5,
+   "throughput": 11,
+   "p50": 385.7,
+   "p95": 699.6,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 10,
+   "throughput": 11,
+   "p50": 573.4,
+   "p95": 2696.0,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 25,
+   "throughput": 11,
+   "p50": 842.9,
+   "p95": 4314.3,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 50,
+   "throughput": 11,
+   "p50": 2116.8,
+   "p95": 8811.3,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 100,
+   "throughput": 9,
+   "p50": 3044.3,
+   "p95": 20661.4,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 1,
+   "throughput": 3,
+   "p50": 373.9,
+   "p95": 475.0,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 5,
+   "throughput": 7,
+   "p50": 659.2,
+   "p95": 814.8,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 10,
+   "throughput": 9,
+   "p50": 956.0,
+   "p95": 1338.0,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 25,
+   "throughput": 11,
+   "p50": 2061.6,
+   "p95": 2564.9,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 50,
+   "throughput": 12,
+   "p50": 3698.3,
+   "p95": 4701.2,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 100,
+   "throughput": 12,
+   "p50": 7372.7,
+   "p95": 8725.4,
+   "errors": 0
+  }
+ ]
+}

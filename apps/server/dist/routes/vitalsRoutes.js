@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const vitalsController_js_1 = require("../controllers/vitalsController.js");
+const auth_js_1 = require("../middleware/auth.js");
+const router = (0, express_1.Router)();
+router.get('/', (0, auth_js_1.authMiddleware)(), (req, res) => vitalsController_js_1.vitalsController.list(req, res));
+router.post('/', (0, auth_js_1.authMiddleware)(), (req, res) => vitalsController_js_1.vitalsController.add(req, res));
+router.delete('/:id', (0, auth_js_1.authMiddleware)(), (req, res) => vitalsController_js_1.vitalsController.remove(req, res));
+exports.default = router;

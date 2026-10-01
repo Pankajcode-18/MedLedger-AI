@@ -1,0 +1,2 @@
+# One row per task per participant, filled by the observer. completed = yes, assisted (needed a hint) or no. seconds from start to done. errors = wrong clicks or dead ends.
+participant_id,role,language,task,completed,seconds,errors,comprehension_correct,notes

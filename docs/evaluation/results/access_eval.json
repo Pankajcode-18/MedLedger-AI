@@ -1,0 +1,569 @@
+{
+ "reportId": "1790353811960",
+ "matrix": {
+  "Doctor, no consent": {
+   "See record in list": {
+    "status": 404,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Download record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Verify record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Add record for patient": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Grant access to a doctor": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   }
+  },
+  "Other patient": {
+   "See record in list": {
+    "status": 404,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Download record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Verify record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Add record for patient": {
+    "status": 409,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Grant access to a doctor": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   }
+  },
+  "Laboratory": {
+   "See record in list": {
+    "status": 404,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Download record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Verify record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Add record for patient": {
+    "status": 201,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Grant access to a doctor": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   }
+  },
+  "Insurance, no claim": {
+   "See record in list": {
+    "status": 404,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Download record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Verify record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Add record for patient": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Grant access to a doctor": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   }
+  },
+  "Administrator": {
+   "See record in list": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Download record": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Verify record": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Add record for patient": {
+    "status": 201,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Grant access to a doctor": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "View audit log (all)": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Manage user accounts": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Read record history": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Lab triage (AI)": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   }
+  },
+  "Not signed in": {
+   "See record in list": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Download record": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Verify record": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Add record for patient": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Grant access to a doctor": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "View audit log (all)": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 401,
+    "observed": "D",
+    "expected": "D"
+   }
+  },
+  "Owner patient": {
+   "See record in list": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Download record": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Verify record": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Add record for patient": {
+    "status": 201,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Grant access to a doctor": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   }
+  },
+  "Doctor, consent granted": {
+   "See record in list": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Download record": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Verify record": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Add record for patient": {
+    "status": 201,
+    "observed": "A",
+    "expected": "A"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   },
+   "Grant access to a doctor": {
+    "status": "n/a",
+    "observed": "D",
+    "expected": "D"
+   }
+  },
+  "Doctor, consent revoked": {
+   "See record in list": {
+    "status": 404,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Download record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Verify record": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Add record for patient": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Grant access to a doctor": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "View audit log (all)": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Manage user accounts": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Read record history": {
+    "status": 403,
+    "observed": "D",
+    "expected": "D"
+   },
+   "Lab triage (AI)": {
+    "status": 200,
+    "observed": "A",
+    "expected": "A"
+   }
+  }
+ },
+ "agreement": "81/81",
+ "load": [
+  {
+   "op": "list",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 542.9306238633912,
+   "p50": 1.1753390000001218,
+   "p95": 5.630027000000155,
+   "errors": 0
+  },
+  {
+   "op": "verify",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 370.25108781158053,
+   "p50": 1.566675000000032,
+   "p95": 7.853416000000379,
+   "errors": 0
+  },
+  {
+   "op": "upload",
+   "concurrency": 1,
+   "requests": 20,
+   "throughput": 45.8787950136356,
+   "p50": 12.026601000000028,
+   "p95": 222.95258300000023,
+   "errors": 0
+  },
+  {
+   "op": "list",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 651.0988540015592,
+   "p50": 6.951567999999952,
+   "p95": 12.346030000000155,
+   "errors": 0
+  },
+  {
+   "op": "verify",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 617.6832256297625,
+   "p50": 7.385739000000285,
+   "p95": 11.97863099999995,
+   "errors": 0
+  },
+  {
+   "op": "upload",
+   "concurrency": 5,
+   "requests": 20,
+   "throughput": 158.26003724127708,
+   "p50": 30.38236300000017,
+   "p95": 47.64921199999981,
+   "errors": 0
+  },
+  {
+   "op": "list",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 397.7355530843182,
+   "p50": 23.22899899999993,
+   "p95": 56.77276900000015,
+   "errors": 0
+  },
+  {
+   "op": "verify",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 466.4644524606672,
+   "p50": 19.999365000000125,
+   "p95": 29.781656999999996,
+   "errors": 0
+  },
+  {
+   "op": "upload",
+   "concurrency": 10,
+   "requests": 20,
+   "throughput": 236.2957028527654,
+   "p50": 39.10921499999995,
+   "p95": 57.919548000000304,
+   "errors": 0
+  },
+  {
+   "op": "list",
+   "concurrency": 25,
+   "requests": 150,
+   "throughput": 371.41278023057134,
+   "p50": 41.21745099999998,
+   "p95": 253.39274099999966,
+   "errors": 0
+  },
+  {
+   "op": "verify",
+   "concurrency": 25,
+   "requests": 150,
+   "throughput": 548.0226153004129,
+   "p50": 40.98524300000008,
+   "p95": 65.69140100000004,
+   "errors": 0
+  },
+  {
+   "op": "upload",
+   "concurrency": 25,
+   "requests": 50,
+   "throughput": 280.01695357045185,
+   "p50": 84.06422399999974,
+   "p95": 94.5927270000002,
+   "errors": 0
+  },
+  {
+   "op": "list",
+   "concurrency": 50,
+   "requests": 300,
+   "throughput": 251.70788371795854,
+   "p50": 96.7564910000001,
+   "p95": 975.4395789999999,
+   "errors": 0
+  },
+  {
+   "op": "verify",
+   "concurrency": 50,
+   "requests": 300,
+   "throughput": 679.8565885130878,
+   "p50": 70.20758500000011,
+   "p95": 79.10516199999984,
+   "errors": 0
+  },
+  {
+   "op": "upload",
+   "concurrency": 50,
+   "requests": 100,
+   "throughput": 254.61347134008167,
+   "p50": 192.2136790000004,
+   "p95": 217.925209,
+   "errors": 0
+  }
+ ],
+ "node": "v22.22.2",
+ "foundAndFixed": "Insurance accounts could add documents to any patient record (server accepted; the client never offered it). Fixed: uploads by insurance now return 403.",
+ "note": "Since Phase 6 an administrator must give a reason to change sharing (break-glass); the grant column sends one."
+}

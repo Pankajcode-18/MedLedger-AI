@@ -1,0 +1,6 @@
+# One row per value printed on a report. "file" is the name in data/reports/. capture = printed (scanner or flat-bed photo of a printout), photo (phone photo), pdf (digital PDF from the lab).
+# test = the name exactly as printed. key = optional engine key if the name is unusual (see labReference.ts). value/unit exactly as printed.
+# flag_on_report = H, L or N if the lab marked it (leave blank if the lab printed no flag). Delete these comment lines or keep them; lines starting with # are ignored.
+report_id,file,capture,lab_code,test,key,value,unit,printed_range,flag_on_report,notes
+R001,R001.jpg,printed,LAB-A,Haemoglobin,,12.4,g/dL,12.0 - 15.5,N,
+R001,R001.jpg,printed,LAB-A,S. Creatinine,,1.6,mg/dL,0.6 - 1.2,H,

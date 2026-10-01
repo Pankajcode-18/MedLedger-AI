@@ -1,0 +1,580 @@
+{
+ "reports": 1000,
+ "seed": 888001,
+ "hard": true,
+ "deidentification": {
+  "withoutRegisteredName": {
+   "withNames": false,
+   "recall": 0.7359897720008524,
+   "total": 14079,
+   "removed": 10362,
+   "reportsFullyClean": 0,
+   "msPerReport": 0.486659157,
+   "byType": {
+    "facility": {
+     "total": 1000,
+     "removed": 1000
+    },
+    "name": {
+     "total": 2427,
+     "removed": 0
+    },
+    "date": {
+     "total": 2327,
+     "removed": 2327
+    },
+    "phone": {
+     "total": 1335,
+     "removed": 1335
+    },
+    "address": {
+     "total": 1338,
+     "removed": 1338
+    },
+    "national_id": {
+     "total": 581,
+     "removed": 581
+    },
+    "clinician": {
+     "total": 2989,
+     "removed": 2714
+    },
+    "relative": {
+     "total": 1501,
+     "removed": 486
+    },
+    "email": {
+     "total": 581,
+     "removed": 581
+    }
+   },
+   "byCtx": {
+    "labelled": {
+     "total": 10396,
+     "removed": 8713
+    },
+    "narrative": {
+     "total": 3683,
+     "removed": 1649
+    }
+   },
+   "byGroup": {
+    "devanagari": {
+     "total": 427,
+     "removed": 0
+    },
+    "name not in list": {
+     "total": 1137,
+     "removed": 725
+    },
+    "name in list": {
+     "total": 1353,
+     "removed": 683
+    }
+   },
+   "misses": [
+    "name: Asha Das",
+    "name: आशा दास",
+    "name: Asha",
+    "relative: Sanjay Yadav",
+    "name: Laxmi Iyer",
+    "name: लक्ष्मी अय्यर",
+    "clinician: Meena Aryal",
+    "name: Laxmi Iyer",
+    "relative: Rajesh Chaudhary",
+    "clinician: Meena Aryal",
+    "relative: Rupesh Aryal",
+    "name: Arjun Patel",
+    "name: अर्जुन पटेल",
+    "name: Arjun",
+    "relative: Rekha Tamang",
+    "name: Dipesh Magar",
+    "clinician: Sunita Chaudhary",
+    "name: Dipesh Magar",
+    "relative: Sunita Tamang",
+    "clinician: Sunita Chaudhary",
+    "name: Deepa Tamang",
+    "name: Deepa Tamang",
+    "relative: Aayusha Bhusal",
+    "name: Amit Magar",
+    "name: Amit Magar",
+    "relative: Asha Das",
+    "name: Kiran Yadav",
+    "name: Kiran",
+    "relative: Deepa Rai",
+    "relative: Ram Thapa",
+    "name: Asha Khadka",
+    "name: Asha Khadka",
+    "name: Kiran Bhattarai",
+    "name: Kiran Bhattarai",
+    "relative: Ram Verma",
+    "name: Rajesh Bhattarai",
+    "name: Rajesh",
+    "name: Arjun Pandey",
+    "name: अर्जुन पाण्डे",
+    "name: Arjun Pandey"
+   ]
+  },
+  "withRegisteredName": {
+   "withNames": true,
+   "recall": 0.8913985368278997,
+   "total": 14079,
+   "removed": 12550,
+   "reportsFullyClean": 0.155,
+   "msPerReport": 1.3992737169999998,
+   "byType": {
+    "facility": {
+     "total": 1000,
+     "removed": 1000
+    },
+    "name": {
+     "total": 2427,
+     "removed": 2000
+    },
+    "date": {
+     "total": 2327,
+     "removed": 2327
+    },
+    "phone": {
+     "total": 1335,
+     "removed": 1335
+    },
+    "address": {
+     "total": 1338,
+     "removed": 1338
+    },
+    "national_id": {
+     "total": 581,
+     "removed": 581
+    },
+    "clinician": {
+     "total": 2989,
+     "removed": 2891
+    },
+    "relative": {
+     "total": 1501,
+     "removed": 497
+    },
+    "email": {
+     "total": 581,
+     "removed": 581
+    }
+   },
+   "byCtx": {
+    "labelled": {
+     "total": 10396,
+     "removed": 9876
+    },
+    "narrative": {
+     "total": 3683,
+     "removed": 2674
+    }
+   },
+   "byGroup": {
+    "devanagari": {
+     "total": 427,
+     "removed": 0
+    },
+    "name not in list": {
+     "total": 1137,
+     "removed": 737
+    },
+    "name in list": {
+     "total": 1353,
+     "removed": 721
+    }
+   },
+   "misses": [
+    "name: आशा दास",
+    "relative: Sanjay Yadav",
+    "name: लक्ष्मी अय्यर",
+    "clinician: Meena Aryal",
+    "relative: Rajesh Chaudhary",
+    "clinician: Meena Aryal",
+    "relative: Rupesh Aryal",
+    "name: अर्जुन पटेल",
+    "relative: Rekha Tamang",
+    "clinician: Sunita Chaudhary",
+    "relative: Sunita Tamang",
+    "clinician: Sunita Chaudhary",
+    "relative: Aayusha Bhusal",
+    "relative: Asha Das",
+    "relative: Deepa Rai",
+    "relative: Ram Thapa",
+    "relative: Ram Verma",
+    "name: अर्जुन पाण्डे",
+    "relative: Vikram Rai",
+    "name: सरिता बस्नेत",
+    "relative: Gita Iyer",
+    "name: राजेश जोशी",
+    "relative: Rohan Das",
+    "relative: Kiran Khadka",
+    "relative: Hikmat Khanal",
+    "name: किरण खड्का",
+    "relative: Suresh Verma",
+    "relative: Sita Thapa",
+    "relative: Arjun Lama",
+    "name: राम भट्टराई",
+    "name: सञ्जय बस्नेत",
+    "relative: Sanjay Shrestha",
+    "clinician: Nabin Gurung",
+    "name: दीपा जोशी",
+    "relative: Nabin Verma",
+    "relative: Rupesh Ghimire",
+    "clinician: Nabin Gurung",
+    "relative: Suresh Patel",
+    "name: हरि पटेल",
+    "relative: Suresh Joshi"
+   ]
+  }
+ },
+ "extraction": {
+  "original": {
+   "valueRecall": 0.8989776701641108,
+   "valuePrecision": 1,
+   "extraValues": 0,
+   "total": 7434,
+   "statusAccuracy": 0.937602872961245,
+   "abnormal": {
+    "tp": 3628,
+    "fp": 191,
+    "fn": 682,
+    "tn": 2933,
+    "precision": 0.949986907567426,
+    "recall": 0.8417633410672853,
+    "f1": 0.8926067166933201,
+    "specificity": 0.9388604353393086
+   },
+   "byFormat": {
+    "dash": {
+     "found": 1537,
+     "total": 1725,
+     "correct": 1524
+    },
+    "bp": {
+     "found": 988,
+     "total": 988,
+     "correct": 988
+    },
+    "table": {
+     "found": 1393,
+     "total": 1610,
+     "correct": 1192
+    },
+    "colon": {
+     "found": 1351,
+     "total": 1555,
+     "correct": 1340
+    },
+    "inline-ref": {
+     "found": 1414,
+     "total": 1556,
+     "correct": 1222
+    }
+   },
+   "byKey": {
+    "platelets": {
+     "found": 244,
+     "total": 244
+    },
+    "hba1c": {
+     "found": 218,
+     "total": 218
+    },
+    "vitamin_d": {
+     "found": 222,
+     "total": 222
+    },
+    "heart_rate": {
+     "found": 228,
+     "total": 228
+    },
+    "hdl": {
+     "found": 177,
+     "total": 243
+    },
+    "triglycerides": {
+     "found": 177,
+     "total": 241
+    },
+    "sodium": {
+     "found": 245,
+     "total": 245
+    },
+    "systolic_bp": {
+     "found": 494,
+     "total": 494
+    },
+    "diastolic_bp": {
+     "found": 494,
+     "total": 494
+    },
+    "urea": {
+     "found": 145,
+     "total": 225
+    },
+    "ldl": {
+     "found": 164,
+     "total": 229
+    },
+    "resp_rate": {
+     "found": 222,
+     "total": 222
+    },
+    "vitamin_b12": {
+     "found": 252,
+     "total": 252
+    },
+    "temperature": {
+     "found": 235,
+     "total": 235
+    },
+    "bilirubin": {
+     "found": 172,
+     "total": 231
+    },
+    "uric_acid": {
+     "found": 175,
+     "total": 245
+    },
+    "hematocrit": {
+     "found": 222,
+     "total": 222
+    },
+    "rbc": {
+     "found": 247,
+     "total": 247
+    },
+    "calcium": {
+     "found": 160,
+     "total": 237
+    },
+    "tsh": {
+     "found": 257,
+     "total": 257
+    },
+    "creatinine": {
+     "found": 138,
+     "total": 200
+    },
+    "total_cholesterol": {
+     "found": 150,
+     "total": 208
+    },
+    "potassium": {
+     "found": 245,
+     "total": 245
+    },
+    "ast": {
+     "found": 251,
+     "total": 251
+    },
+    "wbc": {
+     "found": 227,
+     "total": 227
+    },
+    "alt": {
+     "found": 234,
+     "total": 234
+    },
+    "hemoglobin": {
+     "found": 167,
+     "total": 246
+    },
+    "esr": {
+     "found": 141,
+     "total": 141
+    },
+    "fasting_glucose": {
+     "found": 162,
+     "total": 233
+    },
+    "spo2": {
+     "found": 218,
+     "total": 218
+    }
+   }
+  },
+  "afterDeidentification": {
+   "valueRecall": 0.8989776701641108,
+   "valuePrecision": 1,
+   "extraValues": 0,
+   "total": 7434,
+   "statusAccuracy": 0.937602872961245,
+   "abnormal": {
+    "tp": 3628,
+    "fp": 191,
+    "fn": 682,
+    "tn": 2933,
+    "precision": 0.949986907567426,
+    "recall": 0.8417633410672853,
+    "f1": 0.8926067166933201,
+    "specificity": 0.9388604353393086
+   },
+   "byFormat": {
+    "dash": {
+     "found": 1537,
+     "total": 1725,
+     "correct": 1524
+    },
+    "bp": {
+     "found": 988,
+     "total": 988,
+     "correct": 988
+    },
+    "table": {
+     "found": 1393,
+     "total": 1610,
+     "correct": 1192
+    },
+    "colon": {
+     "found": 1351,
+     "total": 1555,
+     "correct": 1340
+    },
+    "inline-ref": {
+     "found": 1414,
+     "total": 1556,
+     "correct": 1222
+    }
+   },
+   "byKey": {
+    "platelets": {
+     "found": 244,
+     "total": 244
+    },
+    "hba1c": {
+     "found": 218,
+     "total": 218
+    },
+    "vitamin_d": {
+     "found": 222,
+     "total": 222
+    },
+    "heart_rate": {
+     "found": 228,
+     "total": 228
+    },
+    "hdl": {
+     "found": 177,
+     "total": 243
+    },
+    "triglycerides": {
+     "found": 177,
+     "total": 241
+    },
+    "sodium": {
+     "found": 245,
+     "total": 245
+    },
+    "systolic_bp": {
+     "found": 494,
+     "total": 494
+    },
+    "diastolic_bp": {
+     "found": 494,
+     "total": 494
+    },
+    "urea": {
+     "found": 145,
+     "total": 225
+    },
+    "ldl": {
+     "found": 164,
+     "total": 229
+    },
+    "resp_rate": {
+     "found": 222,
+     "total": 222
+    },
+    "vitamin_b12": {
+     "found": 252,
+     "total": 252
+    },
+    "temperature": {
+     "found": 235,
+     "total": 235
+    },
+    "bilirubin": {
+     "found": 172,
+     "total": 231
+    },
+    "uric_acid": {
+     "found": 175,
+     "total": 245
+    },
+    "hematocrit": {
+     "found": 222,
+     "total": 222
+    },
+    "rbc": {
+     "found": 247,
+     "total": 247
+    },
+    "calcium": {
+     "found": 160,
+     "total": 237
+    },
+    "tsh": {
+     "found": 257,
+     "total": 257
+    },
+    "creatinine": {
+     "found": 138,
+     "total": 200
+    },
+    "total_cholesterol": {
+     "found": 150,
+     "total": 208
+    },
+    "potassium": {
+     "found": 245,
+     "total": 245
+    },
+    "ast": {
+     "found": 251,
+     "total": 251
+    },
+    "wbc": {
+     "found": 227,
+     "total": 227
+    },
+    "alt": {
+     "found": 234,
+     "total": 234
+    },
+    "hemoglobin": {
+     "found": 167,
+     "total": 246
+    },
+    "esr": {
+     "found": 141,
+     "total": 141
+    },
+    "fasting_glucose": {
+     "found": 162,
+     "total": 233
+    },
+    "spo2": {
+     "found": 218,
+     "total": 218
+    }
+   }
+  }
+ },
+ "drug": {
+  "drugs": 77,
+  "rules": 41,
+  "pairsTested": 356,
+  "positives": 178,
+  "tp": 178,
+  "fp": 0,
+  "fn": 0,
+  "tn": 178,
+  "precision": 1,
+  "recall": 1,
+  "f1": 1,
+  "specificity": 1,
+  "nameRecognition": 1
+ }
+}

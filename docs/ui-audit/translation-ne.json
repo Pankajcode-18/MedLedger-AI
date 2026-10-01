@@ -1,0 +1,1130 @@
+{
+ "report": [
+  {
+   "role": "public",
+   "path": "/",
+   "total": 241,
+   "eng": 6,
+   "pct": 97.5,
+   "miss": [
+    "Diagnostic Blood Panel.pdf",
+    "Cardiology Assessment & ECG.pdf",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Himal Care Hospital",
+    "Dr. Michael Brown"
+   ]
+  },
+  {
+   "role": "public",
+   "path": "/about",
+   "total": 51,
+   "eng": 0,
+   "pct": 100,
+   "miss": []
+  },
+  {
+   "role": "public",
+   "path": "/login",
+   "total": 63,
+   "eng": 0,
+   "pct": 100,
+   "miss": []
+  },
+  {
+   "role": "public",
+   "path": "/register/patient",
+   "total": 51,
+   "eng": 2,
+   "pct": 96.1,
+   "miss": [
+    "patient@example.com",
+    "+977 98XXXXXXXX"
+   ]
+  },
+  {
+   "role": "public",
+   "path": "/register/doctor",
+   "total": 52,
+   "eng": 2,
+   "pct": 96.2,
+   "miss": [
+    "doctor@hospital.org",
+    "+977 98XXXXXXXX"
+   ]
+  },
+  {
+   "role": "public",
+   "path": "/forgot-password",
+   "total": 42,
+   "eng": 1,
+   "pct": 97.6,
+   "miss": [
+    "you@example.com"
+   ]
+  },
+  {
+   "role": "public",
+   "path": "/reset-password?token=x",
+   "total": 42,
+   "eng": 0,
+   "pct": 100,
+   "miss": []
+  },
+  {
+   "role": "public",
+   "path": "/does-not-exist",
+   "total": 39,
+   "eng": 0,
+   "pct": 100,
+   "miss": []
+  },
+  {
+   "role": "patient",
+   "path": "/patient/dashboard",
+   "total": 95,
+   "eng": 5,
+   "pct": 94.7,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia",
+    "Tanmay Shishodia",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/records",
+   "total": 53,
+   "eng": 2,
+   "pct": 96.2,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/analytics?tab=charts",
+   "total": 54,
+   "eng": 4,
+   "pct": 92.6,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia",
+    "One reading so far (within the normal range).",
+    "3 measurements found across 1 record. Each measurement has only one reading so far, so direction cannot be judged yet. All latest readings are within normal ranges."
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/analytics?tab=reports",
+   "total": 53,
+   "eng": 7,
+   "pct": 86.8,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia",
+    "hp9.docx",
+    "hp9.docx",
+    "Do any of these results change my current treatment plan?",
+    "When should I repeat these tests?",
+    "Is there anything in my lifestyle or diet I should adjust based on this report?"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/analytics?tab=chat",
+   "total": 41,
+   "eng": 2,
+   "pct": 95.1,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/analytics?tab=medications",
+   "total": 42,
+   "eng": 2,
+   "pct": 95.2,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/permissions",
+   "total": 37,
+   "eng": 4,
+   "pct": 89.2,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/activity",
+   "total": 53,
+   "eng": 2,
+   "pct": 96.2,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/notifications",
+   "total": 28,
+   "eng": 2,
+   "pct": 92.9,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "patient",
+   "path": "/patient/settings",
+   "total": 42,
+   "eng": 2,
+   "pct": 95.2,
+   "miss": [
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/dashboard",
+   "total": 43,
+   "eng": 5,
+   "pct": 88.4,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Tanmay Shishodia",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/patients",
+   "total": 36,
+   "eng": 5,
+   "pct": 86.1,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Tanmay Shishodia",
+    "patient@medledger.demo"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/records",
+   "total": 32,
+   "eng": 3,
+   "pct": 90.6,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/requests",
+   "total": 37,
+   "eng": 4,
+   "pct": 89.2,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/ai",
+   "total": 29,
+   "eng": 3,
+   "pct": 89.7,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/medications",
+   "total": 45,
+   "eng": 3,
+   "pct": 93.3,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/activity",
+   "total": 33,
+   "eng": 3,
+   "pct": 90.9,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "doctor",
+   "path": "/doctor/settings",
+   "total": 75,
+   "eng": 9,
+   "pct": 88,
+   "miss": [
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Dr. Anil Sharma",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "+977 98XXXXXXXX"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/dashboard",
+   "total": 54,
+   "eng": 11,
+   "pct": 79.6,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Sabina Rai",
+    "Maternity",
+    "Dr. Bikash Gurung",
+    "Hari Prasad Poudel",
+    "Dr. Sunita Karki",
+    "Tanmay Shishodia",
+    "General Ward A",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/patients",
+   "total": 50,
+   "eng": 10,
+   "pct": 80,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Hari Prasad Poudel",
+    "Chest pain",
+    "Dr. Sunita Karki",
+    "Tanmay Shishodia",
+    "Observation – high blood sugar",
+    "General Ward A",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/staff",
+   "total": 60,
+   "eng": 15,
+   "pct": 75,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Maya Tamang",
+    "NPC-4521",
+    "Maya Tamang",
+    "Ramesh Adhikari",
+    "General Ward",
+    "NNC-11872",
+    "Ramesh Adhikari",
+    "Dr. Bikash Gurung",
+    "Emergency",
+    "Dr. Bikash Gurung",
+    "Dr. Sunita Karki",
+    "Dr. Sunita Karki"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/admissions",
+   "total": 63,
+   "eng": 14,
+   "pct": 77.8,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Sabina Rai",
+    "Delivery",
+    "Maternity",
+    "Dr. Bikash Gurung",
+    "Hari Prasad Poudel",
+    "Chest pain",
+    "Dr. Sunita Karki",
+    "Tanmay Shishodia",
+    "Observation – high blood sugar",
+    "General Ward A",
+    "Dr. Anil Sharma"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/records",
+   "total": 30,
+   "eng": 3,
+   "pct": 90,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/prescriptions",
+   "total": 32,
+   "eng": 3,
+   "pct": 90.6,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/activity",
+   "total": 32,
+   "eng": 3,
+   "pct": 90.6,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital"
+   ]
+  },
+  {
+   "role": "hospital",
+   "path": "/hospital/settings",
+   "total": 72,
+   "eng": 8,
+   "pct": 88.9,
+   "miss": [
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Himal Care Hospital",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/dashboard",
+   "total": 62,
+   "eng": 9,
+   "pct": 85.5,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "SMP-675DDE",
+    "Kiran Shrestha",
+    "SMP-A34AE8",
+    "Gita Bhandari",
+    "SMP-4340CD",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/samples",
+   "total": 65,
+   "eng": 12,
+   "pct": 81.5,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "SMP-80B286",
+    "Tanmay Shishodia",
+    "HbA1c",
+    "SMP-675DDE",
+    "Kiran Shrestha",
+    "SMP-A34AE8",
+    "Gita Bhandari",
+    "SMP-4340CD",
+    "Tanmay Shishodia"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/reports",
+   "total": 29,
+   "eng": 3,
+   "pct": 89.7,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/upload",
+   "total": 43,
+   "eng": 3,
+   "pct": 93,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/verify",
+   "total": 31,
+   "eng": 3,
+   "pct": 90.3,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/activity",
+   "total": 31,
+   "eng": 3,
+   "pct": 90.3,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab"
+   ]
+  },
+  {
+   "role": "lab",
+   "path": "/lab/settings",
+   "total": 72,
+   "eng": 8,
+   "pct": 88.9,
+   "miss": [
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Himal Diagnostic Lab",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/dashboard",
+   "total": 59,
+   "eng": 13,
+   "pct": 78,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "CLM-8806D6",
+    "Hari Prasad Poudel",
+    "SHI-2025-0412",
+    "ICU stay, 3 days",
+    "Himal Care Hospital",
+    "CLM-9575A7",
+    "Tanmay Shishodia",
+    "SHI-2026-0090",
+    "Blood tests and consultation",
+    "Himal Care Hospital"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/claims",
+   "total": 75,
+   "eng": 22,
+   "pct": 70.7,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "CLM-D0F63B",
+    "Kiran Shrestha",
+    "SHI-2024-0078",
+    "Himal Diagnostic Lab",
+    "CLM-F82A38",
+    "Sabina Rai",
+    "SHI-2026-0133",
+    "Normal delivery",
+    "Himal Care Hospital",
+    "CLM-8806D6",
+    "Hari Prasad Poudel",
+    "SHI-2025-0412",
+    "ICU stay, 3 days",
+    "Himal Care Hospital",
+    "CLM-9575A7",
+    "Tanmay Shishodia",
+    "SHI-2026-0090",
+    "Blood tests and consultation",
+    "Himal Care Hospital"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/pending",
+   "total": 49,
+   "eng": 13,
+   "pct": 73.5,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "CLM-8806D6",
+    "Hari Prasad Poudel",
+    "SHI-2025-0412",
+    "ICU stay, 3 days",
+    "Himal Care Hospital",
+    "CLM-9575A7",
+    "Tanmay Shishodia",
+    "SHI-2026-0090",
+    "Blood tests and consultation",
+    "Himal Care Hospital"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/policyholders",
+   "total": 47,
+   "eng": 12,
+   "pct": 74.5,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Sabina Rai",
+    "SHI-2026-0133",
+    "Mother and Child",
+    "Hari Prasad Poudel",
+    "SHI-2025-0412",
+    "Senior Care",
+    "Tanmay Shishodia",
+    "SHI-2026-0090",
+    "Family Health"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/verify",
+   "total": 31,
+   "eng": 3,
+   "pct": 90.3,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/activity",
+   "total": 31,
+   "eng": 3,
+   "pct": 90.3,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance"
+   ]
+  },
+  {
+   "role": "insurance",
+   "path": "/insurance/settings",
+   "total": 70,
+   "eng": 8,
+   "pct": 88.6,
+   "miss": [
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Suraksha Health Insurance",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/dashboard",
+   "total": 42,
+   "eng": 2,
+   "pct": 95.2,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/users",
+   "total": 76,
+   "eng": 14,
+   "pct": 81.6,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator",
+    "Tanmay Shishodia",
+    "patient@medledger.demo",
+    "Dr. Anil Sharma",
+    "doctor@medledger.demo",
+    "Himal Care Hospital",
+    "hospital@medledger.demo",
+    "Himal Diagnostic Lab",
+    "lab@medledger.demo",
+    "Suraksha Health Insurance",
+    "insurance@medledger.demo",
+    "MedLedger Administrator",
+    "admin@medledger.demo"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/orgs",
+   "total": 71,
+   "eng": 16,
+   "pct": 77.5,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator",
+    "Sanjeevani Pathology",
+    "Patna, India",
+    "Pokhara Family Clinic",
+    "CLN-2079-311",
+    "Kaski, Nepal",
+    "Suraksha Health Insurance",
+    "INS-2068-007",
+    "Kathmandu, Nepal",
+    "Himal Diagnostic Lab",
+    "LAB-2075-042",
+    "Lalitpur, Nepal",
+    "Himal Care Hospital",
+    "HOS-2071-118",
+    "Kathmandu, Nepal"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/permissions",
+   "total": 50,
+   "eng": 2,
+   "pct": 96,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/blockchain",
+   "total": 34,
+   "eng": 3,
+   "pct": 91.2,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator",
+    "HealthRecords.sol"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/security",
+   "total": 37,
+   "eng": 2,
+   "pct": 94.6,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/activity",
+   "total": 102,
+   "eng": 2,
+   "pct": 98,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator"
+   ]
+  },
+  {
+   "role": "admin",
+   "path": "/admin/settings",
+   "total": 76,
+   "eng": 11,
+   "pct": 85.5,
+   "miss": [
+    "Medledger Administrator",
+    "Medledger Administrator",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "Chrome · Linux",
+    "apps/server/.env",
+    "HEALTH_RECORDS_CONTRACT_ADDRESS",
+    "JWT_EXPIRES_IN",
+    "CLIENT_ORIGINS"
+   ]
+  }
+ ],
+ "freq": [
+  [
+   "Tanmay Shishodia",
+   36
+  ],
+  [
+   "Dr. Anil Sharma",
+   34
+  ],
+  [
+   "Himal Care Hospital",
+   34
+  ],
+  [
+   "Chrome · Linux",
+   25
+  ],
+  [
+   "Himal Diagnostic Lab",
+   24
+  ],
+  [
+   "Suraksha Health Insurance",
+   23
+  ],
+  [
+   "Medledger Administrator",
+   16
+  ],
+  [
+   "Hari Prasad Poudel",
+   7
+  ],
+  [
+   "Dr. Sunita Karki",
+   5
+  ],
+  [
+   "Sabina Rai",
+   4
+  ],
+  [
+   "Dr. Bikash Gurung",
+   4
+  ],
+  [
+   "SHI-2025-0412",
+   4
+  ],
+  [
+   "SHI-2026-0090",
+   4
+  ],
+  [
+   "+977 98XXXXXXXX",
+   3
+  ],
+  [
+   "General Ward A",
+   3
+  ],
+  [
+   "Kiran Shrestha",
+   3
+  ],
+  [
+   "CLM-8806D6",
+   3
+  ],
+  [
+   "ICU stay, 3 days",
+   3
+  ],
+  [
+   "CLM-9575A7",
+   3
+  ],
+  [
+   "Blood tests and consultation",
+   3
+  ],
+  [
+   "hp9.docx",
+   2
+  ],
+  [
+   "patient@medledger.demo",
+   2
+  ],
+  [
+   "Maternity",
+   2
+  ],
+  [
+   "Chest pain",
+   2
+  ],
+  [
+   "Observation – high blood sugar",
+   2
+  ],
+  [
+   "Maya Tamang",
+   2
+  ],
+  [
+   "Ramesh Adhikari",
+   2
+  ],
+  [
+   "SMP-675DDE",
+   2
+  ],
+  [
+   "SMP-A34AE8",
+   2
+  ],
+  [
+   "Gita Bhandari",
+   2
+  ],
+  [
+   "SMP-4340CD",
+   2
+  ],
+  [
+   "SHI-2026-0133",
+   2
+  ],
+  [
+   "Kathmandu, Nepal",
+   2
+  ],
+  [
+   "Diagnostic Blood Panel.pdf",
+   1
+  ],
+  [
+   "Cardiology Assessment & ECG.pdf",
+   1
+  ],
+  [
+   "Dr. Michael Brown",
+   1
+  ],
+  [
+   "patient@example.com",
+   1
+  ],
+  [
+   "doctor@hospital.org",
+   1
+  ],
+  [
+   "you@example.com",
+   1
+  ],
+  [
+   "One reading so far (within the normal range).",
+   1
+  ],
+  [
+   "3 measurements found across 1 record. Each measurement has only one reading so far, so direction cannot be judged yet. All latest readings are within normal ranges.",
+   1
+  ],
+  [
+   "Do any of these results change my current treatment plan?",
+   1
+  ],
+  [
+   "When should I repeat these tests?",
+   1
+  ],
+  [
+   "Is there anything in my lifestyle or diet I should adjust based on this report?",
+   1
+  ],
+  [
+   "NPC-4521",
+   1
+  ],
+  [
+   "General Ward",
+   1
+  ],
+  [
+   "NNC-11872",
+   1
+  ],
+  [
+   "Emergency",
+   1
+  ],
+  [
+   "Delivery",
+   1
+  ],
+  [
+   "SMP-80B286",
+   1
+  ],
+  [
+   "HbA1c",
+   1
+  ],
+  [
+   "CLM-D0F63B",
+   1
+  ],
+  [
+   "SHI-2024-0078",
+   1
+  ],
+  [
+   "CLM-F82A38",
+   1
+  ],
+  [
+   "Normal delivery",
+   1
+  ],
+  [
+   "Mother and Child",
+   1
+  ],
+  [
+   "Senior Care",
+   1
+  ],
+  [
+   "Family Health",
+   1
+  ],
+  [
+   "doctor@medledger.demo",
+   1
+  ],
+  [
+   "hospital@medledger.demo",
+   1
+  ],
+  [
+   "lab@medledger.demo",
+   1
+  ],
+  [
+   "insurance@medledger.demo",
+   1
+  ],
+  [
+   "MedLedger Administrator",
+   1
+  ],
+  [
+   "admin@medledger.demo",
+   1
+  ],
+  [
+   "Sanjeevani Pathology",
+   1
+  ],
+  [
+   "Patna, India",
+   1
+  ],
+  [
+   "Pokhara Family Clinic",
+   1
+  ],
+  [
+   "CLN-2079-311",
+   1
+  ],
+  [
+   "Kaski, Nepal",
+   1
+  ],
+  [
+   "INS-2068-007",
+   1
+  ],
+  [
+   "LAB-2075-042",
+   1
+  ],
+  [
+   "Lalitpur, Nepal",
+   1
+  ],
+  [
+   "HOS-2071-118",
+   1
+  ],
+  [
+   "HealthRecords.sol",
+   1
+  ],
+  [
+   "apps/server/.env",
+   1
+  ],
+  [
+   "HEALTH_RECORDS_CONTRACT_ADDRESS",
+   1
+  ],
+  [
+   "JWT_EXPIRES_IN",
+   1
+  ],
+  [
+   "CLIENT_ORIGINS",
+   1
+  ]
+ ]
+}

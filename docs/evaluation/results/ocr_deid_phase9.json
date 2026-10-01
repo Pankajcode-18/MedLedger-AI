@@ -1,0 +1,72 @@
+[
+ {
+  "set": "set_626262",
+  "kind": "clean",
+  "withRegisteredName": true,
+  "identifiers": 677,
+  "recall": 1
+ },
+ {
+  "set": "set_626262",
+  "kind": "clean",
+  "withRegisteredName": false,
+  "identifiers": 677,
+  "recall": 1
+ },
+ {
+  "set": "set_626262",
+  "kind": "degraded",
+  "withRegisteredName": true,
+  "identifiers": 677,
+  "recall": 0.9867060561299852
+ },
+ {
+  "set": "set_626262",
+  "kind": "degraded",
+  "withRegisteredName": false,
+  "identifiers": 677,
+  "recall": 0.9630723781388478
+ },
+ {
+  "set": "set_737373",
+  "kind": "clean",
+  "withRegisteredName": true,
+  "identifiers": 674,
+  "recall": 1
+ },
+ {
+  "set": "set_737373",
+  "kind": "clean",
+  "withRegisteredName": false,
+  "identifiers": 674,
+  "recall": 1
+ },
+ {
+  "set": "set_737373",
+  "kind": "moderate",
+  "withRegisteredName": true,
+  "identifiers": 674,
+  "recall": 1
+ },
+ {
+  "set": "set_737373",
+  "kind": "moderate",
+  "withRegisteredName": false,
+  "identifiers": 674,
+  "recall": 1
+ },
+ {
+  "set": "set_737373",
+  "kind": "degraded",
+  "withRegisteredName": true,
+  "identifiers": 674,
+  "recall": 1
+ },
+ {
+  "set": "set_737373",
+  "kind": "degraded",
+  "withRegisteredName": false,
+  "identifiers": 674,
+  "recall": 0.9970326409495549
+ }
+]

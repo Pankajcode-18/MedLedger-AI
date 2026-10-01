@@ -1,0 +1,70 @@
+{
+ "note": "Gas used on Hardhat's in-process chain (solc 0.8.20, optimizer 200 runs, paris).",
+ "before": {
+  "deploy": 752619,
+  "registerRecordFor_first": 137487,
+  "registerRecordFor_median": 120387,
+  "registerRecord_ownWallet": 134861,
+  "grantAccessFor": 48670,
+  "revokeAccessFor": 26738,
+  "grantAccessFor_again": 48670,
+  "logAccess": 25404
+ },
+ "after": {
+  "deploy": 887356,
+  "registerRecordFor_first": 48704,
+  "registerRecordFor_median": 48704,
+  "registerRecord_ownWallet": 46011,
+  "grantAccessFor": 48676,
+  "revokeAccessFor": 26738,
+  "grantAccessFor_again": 48676,
+  "logAccess": 25360,
+  "anchorBatch": {
+   "1": {
+    "total": 48289,
+    "perRecord": 48289
+   },
+   "5": {
+    "total": 48277,
+    "perRecord": 9655
+   },
+   "10": {
+    "total": 48289,
+    "perRecord": 4829
+   },
+   "20": {
+    "total": 48289,
+    "perRecord": 2414
+   },
+   "50": {
+    "total": 48289,
+    "perRecord": 966
+   },
+   "100": {
+    "total": 48289,
+    "perRecord": 483
+   },
+   "500": {
+    "total": 48301,
+    "perRecord": 97
+   }
+  }
+ },
+ "feeEthAtExamplePrices": {
+  "1 gwei": {
+   "registerBefore": 0.000120387,
+   "registerAfter": 0.000048704,
+   "perRecordInBatchOf50": 9.66e-7
+  },
+  "10 gwei": {
+   "registerBefore": 0.00120387,
+   "registerAfter": 0.00048704,
+   "perRecordInBatchOf50": 0.00000966
+  },
+  "30 gwei": {
+   "registerBefore": 0.00361161,
+   "registerAfter": 0.00146112,
+   "perRecordInBatchOf50": 0.00002898
+  }
+ }
+}

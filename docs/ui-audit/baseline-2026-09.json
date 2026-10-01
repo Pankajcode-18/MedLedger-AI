@@ -1,0 +1,971 @@
+[
+ {
+  "role": "public",
+  "path": "/",
+  "score": 0,
+  "hits": {
+   "blockchain": 9,
+   "ledger": 14,
+   "sha-256": 3,
+   "aes": 1,
+   "gcm": 1,
+   "cryptograph": 2,
+   "consensus": 1,
+   "on-chain": 1,
+   "sepolia": 1,
+   "ethereum": 3,
+   "encrypt": 10,
+   "vault": 1
+  },
+  "caps": [
+   "ACCESS HUB",
+   "TAILORED ENVIRONMENTS",
+   "KEY FEATURES",
+   "KEY FEATURES",
+   "KEY FEATURES",
+   "KEY FEATURES"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 5
+ },
+ {
+  "role": "public",
+  "path": "/about",
+  "score": 2.3,
+  "hits": {
+   "blockchain": 2,
+   "ledger": 10,
+   "sha-256": 1,
+   "aes": 1,
+   "node": 1,
+   "sepolia": 2,
+   "ethereum": 2,
+   "encrypt": 2,
+   "clinician": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 0
+ },
+ {
+  "role": "public",
+  "path": "/login",
+  "score": 6.8,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 7,
+   "encrypt": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 4
+ },
+ {
+  "role": "public",
+  "path": "/register/patient",
+  "score": 6.8,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 6,
+   "encrypt": 1,
+   "clinician": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "public",
+  "path": "/register/doctor",
+  "score": 6.2,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 6,
+   "encrypt": 1,
+   "clinician": 2,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "public",
+  "path": "/forgot-password",
+  "score": 7.2,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 6,
+   "encrypt": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 1
+ },
+ {
+  "role": "public",
+  "path": "/reset-password?token=x",
+  "score": 7.2,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 6,
+   "encrypt": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 1
+ },
+ {
+  "role": "public",
+  "path": "/does-not-exist",
+  "score": 7.2,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 6,
+   "encrypt": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 0
+ },
+ {
+  "role": "patient",
+  "path": "/patient/dashboard",
+  "score": 4.5,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 1,
+   "sha-256": 2,
+   "aes": 1,
+   "gcm": 1,
+   "de-identif": 1,
+   "encrypt": 2,
+   "vault": 1,
+   "copilot": 1
+  },
+  "caps": [
+   "BLOOD PRESSURE",
+   "HEART RATE",
+   "BLOOD OXYGEN",
+   "BLOOD SUGAR",
+   "EMERGENCY DETAILS"
+  ],
+  "long": [],
+  "vague": [
+   "Manage"
+  ],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 13
+ },
+ {
+  "role": "patient",
+  "path": "/patient/records",
+  "score": 4.1,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 1,
+   "sha-256": 2,
+   "aes": 2,
+   "gcm": 2,
+   "anchor": 1,
+   "decrypt": 1,
+   "encrypt": 2,
+   "vault": 2
+  },
+  "caps": [
+   "TOTAL VAULT FILES",
+   "ENCRYPTION STANDARD\nAES",
+   "INTEGRITY PROOFS",
+   "ACCESS STATUS"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 8
+ },
+ {
+  "role": "patient",
+  "path": "/patient/analytics?tab=charts",
+  "score": 9.4,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [
+   "WHAT THE TRENDS SHOW"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "patient",
+  "path": "/patient/analytics?tab=reports",
+  "score": 9.2,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [
+   "VALUES OUTSIDE THE NORMAL RANGE",
+   "VALUES IN THE NORMAL RANGE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "patient",
+  "path": "/patient/analytics?tab=chat",
+  "score": 8.8,
+  "hits": {
+   "ledger": 1,
+   "encrypt": 1
+  },
+  "caps": [
+   "QUESTION TO ASK INSTANTLY"
+  ],
+  "long": [
+   "I can explain the values in your reports and readings, tell you how they have changed over time, explain your medicines,"
+  ],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "patient",
+  "path": "/patient/analytics?tab=medications",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 0
+ },
+ {
+  "role": "patient",
+  "path": "/patient/permissions",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "patient",
+  "path": "/patient/activity",
+  "score": 9.3,
+  "hits": {
+   "ledger": 2
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 0
+ },
+ {
+  "role": "patient",
+  "path": "/patient/notifications",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "patient",
+  "path": "/patient/settings",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 1
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/dashboard",
+  "score": 8.9,
+  "hits": {
+   "ledger": 2,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/patients",
+  "score": 8.9,
+  "hits": {
+   "ledger": 2,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/records",
+  "score": 9.3,
+  "hits": {
+   "ledger": 1,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/requests",
+  "score": 9.3,
+  "hits": {
+   "ledger": 1,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/ai",
+  "score": 9.3,
+  "hits": {
+   "ledger": 1,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/medications",
+  "score": 9.3,
+  "hits": {
+   "ledger": 1,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/activity",
+  "score": 9.3,
+  "hits": {
+   "ledger": 1,
+   "station": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "doctor",
+  "path": "/doctor/settings",
+  "score": 8.7,
+  "hits": {
+   "ledger": 1,
+   "private key": 1,
+   "station": 1
+  },
+  "caps": [
+   "THIS DEVICE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/dashboard",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/patients",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/staff",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": true,
+  "smallTargets": 6
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/admissions",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 10
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/records",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/prescriptions",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/activity",
+  "score": 9.7,
+  "hits": {
+   "ledger": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "hospital",
+  "path": "/hospital/settings",
+  "score": 9.1,
+  "hits": {
+   "ledger": 1,
+   "private key": 1
+  },
+  "caps": [
+   "THIS DEVICE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "lab",
+  "path": "/lab/dashboard",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "lab",
+  "path": "/lab/samples",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 11
+ },
+ {
+  "role": "lab",
+  "path": "/lab/reports",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "lab",
+  "path": "/lab/upload",
+  "score": 8.6,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1,
+   "encrypt": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 7
+ },
+ {
+  "role": "lab",
+  "path": "/lab/verify",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "lab",
+  "path": "/lab/activity",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "lab",
+  "path": "/lab/settings",
+  "score": 8.3,
+  "hits": {
+   "ledger": 1,
+   "cryptograph": 1,
+   "specimen": 1,
+   "private key": 1
+  },
+  "caps": [
+   "THIS DEVICE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/dashboard",
+  "score": 8,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 2,
+  "overflow": false,
+  "smallTargets": 5
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/claims",
+  "score": 8.4,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 1,
+  "overflow": false,
+  "smallTargets": 12
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/pending",
+  "score": 8.4,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 1,
+  "overflow": false,
+  "smallTargets": 4
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/policyholders",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/verify",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/activity",
+  "score": 8.9,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1
+  },
+  "caps": [],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 2
+ },
+ {
+  "role": "insurance",
+  "path": "/insurance/settings",
+  "score": 8.3,
+  "hits": {
+   "ledger": 1,
+   "adjudicat": 1,
+   "immutable": 1,
+   "private key": 1
+  },
+  "caps": [
+   "THIS DEVICE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ },
+ {
+  "role": "admin",
+  "path": "/admin/dashboard",
+  "score": 3.8,
+  "hits": {
+   "blockchain": 2,
+   "ledger": 7,
+   "node": 2,
+   "smart contract": 1,
+   "telemetry": 1,
+   "governance": 2,
+   "tamper-proof": 1,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "admin",
+  "path": "/admin/users",
+  "score": 3.6,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 12,
+   "node": 1,
+   "governance": 2,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION",
+   "USER\tROLE\tORGANIZATION\tACCOUNT STATUS\tLAST ACTIVITY\tACTIONS"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 17
+ },
+ {
+  "role": "admin",
+  "path": "/admin/orgs",
+  "score": 5.7,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 6,
+   "node": 1,
+   "governance": 2,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION",
+   "NABL MC"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 4
+ },
+ {
+  "role": "admin",
+  "path": "/admin/permissions",
+  "score": 3.6,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 5,
+   "cryptograph": 1,
+   "node": 1,
+   "smart contract": 1,
+   "rbac": 2,
+   "governance": 5,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION",
+   "SMART CONTRACT GOVERNANCE\nROLE\tREAD RECORDS\tUPLOAD FILES\tGRANT CONSENT\tREVOKE CONSENT\tAPPROVE CLAIMS\tSYSTEM GOVERNANCE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "admin",
+  "path": "/admin/blockchain",
+  "score": 7.3,
+  "hits": {
+   "cryptograph": 1,
+   "governance": 2,
+   "tamper-proof": 1,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION",
+   "SMART CONTRACT",
+   "BLOCK HEIGHT",
+   "CHANGED FILES FOUND"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "admin",
+  "path": "/admin/security",
+  "score": 8.7,
+  "hits": {
+   "governance": 2,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "admin",
+  "path": "/admin/activity",
+  "score": 5.2,
+  "hits": {
+   "blockchain": 1,
+   "ledger": 7,
+   "node": 1,
+   "consortium": 1,
+   "governance": 2,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 3
+ },
+ {
+  "role": "admin",
+  "path": "/admin/settings",
+  "score": 8.1,
+  "hits": {
+   "governance": 2,
+   "private key": 1,
+   "station": 1
+  },
+  "caps": [
+   "ROOT GOVERNANCE STATION",
+   "THIS DEVICE"
+  ],
+  "long": [],
+  "vague": [],
+  "codes": 0,
+  "overflow": false,
+  "smallTargets": 6
+ }
+]

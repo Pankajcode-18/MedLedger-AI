@@ -1,0 +1,53 @@
+{
+  "name": "ai-blockchain-ehr-ethereum",
+  "version": "1.0.0",
+  "description": "MedLedger AI \u2013 health records with encryption, AI and an Ethereum record history",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:contract && npm run test:server && npm run test:client",
+    "test:contract": "hardhat test blockchain/test/HealthRecords.test.js",
+    "test:server": "npm test --prefix apps/server",
+    "test:client": "npm test --prefix apps/client",
+    "test:e2e": "npm run test:e2e --prefix apps/client",
+    "compile": "hardhat compile",
+    "chain:node": "hardhat node",
+    "deploy:local": "hardhat run blockchain/scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run blockchain/scripts/deploy.js --network sepolia",
+    "chain:events:local": "hardhat run blockchain/scripts/events.js --network localhost",
+    "chain:events:sepolia": "hardhat run blockchain/scripts/events.js --network sepolia",
+    "eval:gas": "hardhat run docs/evaluation/eval_gas.js",
+    "install:all": "npm install && npm install --prefix apps/server && npm install --prefix apps/client",
+    "dev:client": "npm run dev --prefix apps/client",
+    "dev:server": "npm run dev --prefix apps/server",
+    "build:client": "npm run build --prefix apps/client",
+    "build:server": "npm run build --prefix apps/server"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "hardhat",
+    "ehr",
+    "blockchain",
+    "sepolia"
+  ],
+  "author": "Yash Verma & Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.17.0",
+    "hardhat": "^2.29.1",
+    "solc": "0.8.20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.3.0",
+    "openai": "^7.10.0",
+    "pdf-parse": "^2.4.5",
+    "pdf2pic": "^3.2.0",
+    "tesseract.js": "^7.0.0"
+  }
+}

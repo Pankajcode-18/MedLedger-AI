@@ -1,0 +1,100 @@
+{
+ "clean": {
+  "recall": 1,
+  "total": 677,
+  "removed": 677,
+  "byType": {
+   "facility": {
+    "total": 60,
+    "removed": 60
+   },
+   "name": {
+    "total": 120,
+    "removed": 120
+   },
+   "date": {
+    "total": 145,
+    "removed": 145
+   },
+   "phone": {
+    "total": 78,
+    "removed": 78
+   },
+   "address": {
+    "total": 77,
+    "removed": 77
+   },
+   "national_id": {
+    "total": 41,
+    "removed": 41
+   },
+   "email": {
+    "total": 36,
+    "removed": 36
+   },
+   "clinician": {
+    "total": 120,
+    "removed": 120
+   }
+  },
+  "belowConfidenceGate": {
+   "reports": 0,
+   "total": 0,
+   "removed": 0
+  },
+  "reachingExternalModel": {
+   "total": 677,
+   "removed": 677,
+   "recall": 1
+  }
+ },
+ "degraded": {
+  "recall": 0.9778434268833087,
+  "total": 677,
+  "removed": 662,
+  "byType": {
+   "facility": {
+    "total": 60,
+    "removed": 60
+   },
+   "name": {
+    "total": 120,
+    "removed": 120
+   },
+   "date": {
+    "total": 145,
+    "removed": 145
+   },
+   "phone": {
+    "total": 78,
+    "removed": 78
+   },
+   "address": {
+    "total": 77,
+    "removed": 76
+   },
+   "national_id": {
+    "total": 41,
+    "removed": 41
+   },
+   "email": {
+    "total": 36,
+    "removed": 36
+   },
+   "clinician": {
+    "total": 120,
+    "removed": 106
+   }
+  },
+  "belowConfidenceGate": {
+   "reports": 60,
+   "total": 677,
+   "removed": 662
+  },
+  "reachingExternalModel": {
+   "total": 0,
+   "removed": 0,
+   "recall": 0
+  }
+ }
+}

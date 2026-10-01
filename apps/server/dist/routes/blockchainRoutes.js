@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const blockchainController_js_1 = require("../controllers/blockchainController.js");
+const router = (0, express_1.Router)();
+router.get('/blocks', (req, res) => blockchainController_js_1.blockchainController.getBlocks(req, res));
+router.get('/verify/:sha256Hash', (req, res) => blockchainController_js_1.blockchainController.verifyRecord(req, res));
+router.get('/verify', (req, res) => blockchainController_js_1.blockchainController.verifyRecord(req, res));
+router.post('/verify', (req, res) => blockchainController_js_1.blockchainController.verifyRecord(req, res));
+exports.default = router;

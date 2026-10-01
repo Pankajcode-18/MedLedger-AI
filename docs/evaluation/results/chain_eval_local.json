@@ -1,0 +1,71 @@
+{
+ "network": "local",
+ "chainId": 31337,
+ "blockMs": 12000,
+ "batchSize": 1,
+ "uploads": 50,
+ "pairs": 50,
+ "queuedWrites": 150,
+ "confirmedWrites": 150,
+ "confirmedRate": 1,
+ "byKind": {
+  "upload": {
+   "queued": 50,
+   "confirmed": 50,
+   "failed": 0,
+   "confirmedRate": 1,
+   "transactions": 50,
+   "secondsQueueToConfirm": {
+    "median": 11.898,
+    "p95": 12.077,
+    "max": 12.093
+   },
+   "secondsSendToConfirm": {
+    "median": 10.758,
+    "p95": 11.953
+   },
+   "gasPerEntry": 48703,
+   "feeEthPerEntry": 0.0000861484422595284,
+   "errors": []
+  },
+  "grant": {
+   "queued": 50,
+   "confirmed": 50,
+   "failed": 0,
+   "confirmedRate": 1,
+   "transactions": 50,
+   "secondsQueueToConfirm": {
+    "median": 11.452,
+    "p95": 11.678,
+    "max": 11.698
+   },
+   "secondsSendToConfirm": {
+    "median": 8.326,
+    "p95": 9.337
+   },
+   "gasPerEntry": 48532,
+   "feeEthPerEntry": 0.000085846320945396,
+   "errors": []
+  },
+  "revoke": {
+   "queued": 50,
+   "confirmed": 50,
+   "failed": 0,
+   "confirmedRate": 1,
+   "transactions": 50,
+   "secondsQueueToConfirm": {
+    "median": 11.449,
+    "p95": 11.676,
+    "max": 11.694
+   },
+   "secondsSendToConfirm": {
+    "median": 8.313,
+    "p95": 9.321
+   },
+   "gasPerEntry": 26594,
+   "feeEthPerEntry": 0.000047041066908882005,
+   "errors": []
+  }
+ },
+ "measuredAt": "2026-09-25T17:10:17.127Z"
+}

@@ -1,0 +1,385 @@
+{
+ "node": "v22.22.2",
+ "cpus": 2,
+ "records": 1001,
+ "results": [
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 320.3677729767855,
+   "p50": 2.756763000000319,
+   "p95": 4.602114999999685,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 708.4306212250077,
+   "p50": 6.917177000000265,
+   "p95": 11.044971999999689,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 690.120108710758,
+   "p50": 13.000801000000138,
+   "p95": 24.921408000000156,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 25,
+   "requests": 100,
+   "throughput": 622.2298366561425,
+   "p50": 17.56019600000036,
+   "p95": 128.25723199999993,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 50,
+   "requests": 200,
+   "throughput": 655.1500117291507,
+   "p50": 31.198035999999775,
+   "p95": 269.5520860000006,
+   "errors": 0
+  },
+  {
+   "scenario": "list (patient, 51 records)",
+   "concurrency": 100,
+   "requests": 400,
+   "throughput": 641.4137703659935,
+   "p50": 64.34786900000017,
+   "p95": 532.8311010000007,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 36.74407771659629,
+   "p50": 26.002988000000187,
+   "p95": 38.35800399999971,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 56.94178227139626,
+   "p50": 76.99792300000081,
+   "p95": 146.69613899999968,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 58.29773126835042,
+   "p50": 148.99713000000156,
+   "p95": 325.7034449999992,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 25,
+   "requests": 100,
+   "throughput": 60.86201151671026,
+   "p50": 215.65247799999997,
+   "p95": 1531.6149349999996,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 50,
+   "requests": 200,
+   "throughput": 60.39847990736529,
+   "p50": 417.06257600000026,
+   "p95": 3134.0270359999995,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, 1,001 records)",
+   "concurrency": 100,
+   "requests": 400,
+   "throughput": 58.904315988150515,
+   "p50": 836.5494560000006,
+   "p95": 6395.287104999999,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, summary, 1,001)",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 70.62760050957493,
+   "p50": 13.104200999998284,
+   "p95": 20.546470000001136,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, summary, 1,001)",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 112.44580887888117,
+   "p50": 43.45053399999961,
+   "p95": 69.19871499999863,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, summary, 1,001)",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 97.9333161669288,
+   "p50": 72.80249699999695,
+   "p95": 270.8811280000009,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, summary, 1,001)",
+   "concurrency": 25,
+   "requests": 100,
+   "throughput": 108.83868087013734,
+   "p50": 105.70482300000003,
+   "p95": 855.234833999999,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, summary, 1,001)",
+   "concurrency": 50,
+   "requests": 200,
+   "throughput": 108.86318350194738,
+   "p50": 216.6126239999976,
+   "p95": 1700.7610890000033,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, summary, 1,001)",
+   "concurrency": 100,
+   "requests": 400,
+   "throughput": 105.52759655528013,
+   "p50": 477.53204800000094,
+   "p95": 3518.8172059999997,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 802.3937395186114,
+   "p50": 1.1569180000005872,
+   "p95": 2.030315000003611,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 1051.00781612442,
+   "p50": 4.02976900000067,
+   "p95": 7.857089999997697,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 1152.6577902641861,
+   "p50": 6.800407999995514,
+   "p95": 14.93442099999811,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 25,
+   "requests": 100,
+   "throughput": 1174.4893076783078,
+   "p50": 15.203439000004437,
+   "p95": 34.160053999999946,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 50,
+   "requests": 200,
+   "throughput": 1058.1739655882507,
+   "p50": 43.08980200000224,
+   "p95": 67.49988199999643,
+   "errors": 0
+  },
+  {
+   "scenario": "list (doctor, page of 25)",
+   "concurrency": 100,
+   "requests": 400,
+   "throughput": 1036.8598653356307,
+   "p50": 89.78488300000026,
+   "p95": 113.73548800000572,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 1,
+   "requests": 100,
+   "throughput": 947.8388813802563,
+   "p50": 0.9306789999973262,
+   "p95": 1.6629859999957262,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 5,
+   "requests": 100,
+   "throughput": 1286.6288269986212,
+   "p50": 3.036764000004041,
+   "p95": 9.886203000001842,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 10,
+   "requests": 100,
+   "throughput": 1167.4605262041707,
+   "p50": 6.396637999998347,
+   "p95": 21.936331999997492,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 25,
+   "requests": 100,
+   "throughput": 1031.4569299222198,
+   "p50": 17.019202999996196,
+   "p95": 47.164999000000535,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 50,
+   "requests": 200,
+   "throughput": 1627.6434272063918,
+   "p50": 28.30123000000458,
+   "p95": 36.21592399999645,
+   "errors": 0
+  },
+  {
+   "scenario": "record check",
+   "concurrency": 100,
+   "requests": 400,
+   "throughput": 1621.4904627640137,
+   "p50": 53.50337800000125,
+   "p95": 103.1453079999992,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 1,
+   "requests": 30,
+   "throughput": 100.17434844475042,
+   "p50": 8.691435000000638,
+   "p95": 21.41186999999627,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 5,
+   "requests": 30,
+   "throughput": 194.98034412900356,
+   "p50": 22.353240000004007,
+   "p95": 45.06133200000477,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 10,
+   "requests": 30,
+   "throughput": 250.78267601299595,
+   "p50": 37.364221999996516,
+   "p95": 54.46218700000463,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 25,
+   "requests": 50,
+   "throughput": 274.88468216488536,
+   "p50": 91.5453800000032,
+   "p95": 122.65172599999642,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 50,
+   "requests": 100,
+   "throughput": 343.4952734586682,
+   "p50": 140.7639779999954,
+   "p95": 204.1742579999991,
+   "errors": 0
+  },
+  {
+   "scenario": "upload 100 KB",
+   "concurrency": 100,
+   "requests": 200,
+   "throughput": 340.9656348289046,
+   "p50": 315.3092719999986,
+   "p95": 420.5839629999973,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 1,
+   "requests": 20,
+   "throughput": 9.889790146673688,
+   "p50": 94.21035399999528,
+   "p95": 191.67410199999722,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 5,
+   "requests": 20,
+   "throughput": 17.927784587133814,
+   "p50": 269.82998999999836,
+   "p95": 302.4314350000059,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 10,
+   "requests": 20,
+   "throughput": 19.281565160767816,
+   "p50": 427.14530699999887,
+   "p95": 626.2751100000023,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 25,
+   "requests": 50,
+   "throughput": 19.812195224642206,
+   "p50": 1039.4231300000029,
+   "p95": 1509.0752219999995,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 50,
+   "requests": 100,
+   "throughput": 19.844816157166687,
+   "p50": 2083.3769390000016,
+   "p95": 2964.063497000003,
+   "errors": 0
+  },
+  {
+   "scenario": "download 5 MB",
+   "concurrency": 100,
+   "requests": 200,
+   "throughput": 20.251244667191013,
+   "p50": 4097.763405999998,
+   "p95": 5402.122653999999,
+   "errors": 0
+  }
+ ]
+}

@@ -1,0 +1,683 @@
+[
+ {
+  "id": 1,
+  "text": "Lumbini Teaching Hospital\nPatient Name: Asha Das    Age/Sex: 46/M\nDOB: 02/07/1968    Phone: +91 38996 55152\nAddress: 83 Ring Road, Dharan\nID No: 08-62-38-30235\nReferred by: Dr. Vikram Basnet    Collected: 3/8/2026\nबिरामीको नाम: आशा दास\n\nPlatelet count - 390,985 /µL\nHbA1c - 8.07 %\nVitamin D - 227 ng/mL\nHeart rate - 103 bpm\nHDL cholesterol - 39 mg/dL\nTriglycerides - 153 mg/dL\nSodium - 137 mmol/L\nBlood pressure: 139/68 mmHg\n\nImpression: Asha is a 46-year-old resident of Dharan; advised review with Dr. Vikram Basnet in two weeks.\nMrs. Ujjwal Sapkota called to ask about the results.\nSample collected by Sanjay Yadav at 9:05 am.\nReported by: Dr. Vikram Basnet",
+  "patientName": "Asha Das",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Lumbini Teaching Hospital",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Asha Das",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "02/07/1968",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "+91 38996 55152",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "83 Ring Road",
+    "context": "labelled"
+   },
+   {
+    "type": "national_id",
+    "value": "08-62-38-30235",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Vikram Basnet",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "3/8/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "आशा दास",
+    "context": "labelled",
+    "script": "devanagari"
+   },
+   {
+    "type": "address",
+    "value": "Dharan",
+    "context": "narrative"
+   },
+   {
+    "type": "name",
+    "value": "Asha",
+    "context": "narrative"
+   },
+   {
+    "type": "relative",
+    "value": "Ujjwal Sapkota",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "relative",
+    "value": "Sanjay Yadav",
+    "context": "narrative",
+    "rareName": false
+   },
+   {
+    "type": "clinician",
+    "value": "Vikram Basnet",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "platelets",
+    "value": 390985,
+    "status": "normal",
+    "format": "dash",
+    "range": "built-in"
+   },
+   {
+    "key": "hba1c",
+    "value": 8.07,
+    "status": "high",
+    "format": "dash",
+    "range": "built-in"
+   },
+   {
+    "key": "vitamin_d",
+    "value": 227,
+    "status": "high",
+    "format": "dash",
+    "range": "built-in"
+   },
+   {
+    "key": "heart_rate",
+    "value": 103,
+    "status": "high",
+    "format": "dash",
+    "range": "built-in"
+   },
+   {
+    "key": "hdl",
+    "value": 39,
+    "status": "low",
+    "format": "dash",
+    "range": "built-in"
+   },
+   {
+    "key": "triglycerides",
+    "value": 153,
+    "status": "high",
+    "format": "dash",
+    "range": "built-in"
+   },
+   {
+    "key": "sodium",
+    "value": 137,
+    "status": "normal",
+    "format": "dash",
+    "range": "built-in"
+   }
+  ],
+  "bp": {
+   "sys": 139,
+   "dia": 68
+  }
+ },
+ {
+  "id": 2,
+  "text": "Everest Medical Centre\nPatient Name: Laxmi Iyer    Age/Sex: 35/M\nDOB: 2002-02-10    Phone: +977 9824771321\nAddress: 151 Gandhi Nagar, Kirtipur\nID No: 7720 8591 2784\nReferred by: Dr. Amit Lama    Collected: 15/12/2026\nनाम: लक्ष्मी अय्यर\nConsultant pathologist: Dr. Meena Aryal\n\nTest                     Result      Unit         Reference\nBlood urea nitrogen      2.8         mg/dL        6.99 - 19.3\nPulse                    92          bpm          60.1 - 107\nLDL                      132         mg/dL        < 124\nRespiratory rate         9.8         breaths/min  12.7 - 20.8\nVitamin B12              546         pg/mL        195 - 915\nTemp                     35.2        °C           36.3 - 39.1\nBilirubin                0.04        mg/dL        0.09 - 1.23\nGlycated haemoglobin     5.41        %            < 5.74\n\nImpression: Findings discussed with Laxmi Iyer. Repeat tests after February 2026.\nAccompanied by his son Rajesh Chaudhary, who gave the history.\nCase discussed with Dr. Meena Aryal.\nSample collected by Rupesh Aryal at 7:40 am.\nReported by: Dr. Amit Lama",
+  "patientName": "Laxmi Iyer",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Everest Medical Centre",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Laxmi Iyer",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "2002-02-10",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "+977 9824771321",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "151 Gandhi Nagar",
+    "context": "labelled"
+   },
+   {
+    "type": "national_id",
+    "value": "7720 8591 2784",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Amit Lama",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "15/12/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "लक्ष्मी अय्यर",
+    "context": "labelled",
+    "script": "devanagari"
+   },
+   {
+    "type": "clinician",
+    "value": "Meena Aryal",
+    "context": "labelled",
+    "rareName": true
+   },
+   {
+    "type": "name",
+    "value": "Laxmi Iyer",
+    "context": "narrative"
+   },
+   {
+    "type": "date",
+    "value": "February 2026",
+    "context": "narrative"
+   },
+   {
+    "type": "relative",
+    "value": "Rajesh Chaudhary",
+    "context": "narrative",
+    "rareName": false
+   },
+   {
+    "type": "clinician",
+    "value": "Meena Aryal",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "relative",
+    "value": "Rupesh Aryal",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "clinician",
+    "value": "Amit Lama",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "urea",
+    "value": 2.8,
+    "status": "low",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "heart_rate",
+    "value": 92,
+    "status": "normal",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "ldl",
+    "value": 132,
+    "status": "high",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "resp_rate",
+    "value": 9.8,
+    "status": "low",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "vitamin_b12",
+    "value": 546,
+    "status": "normal",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "temperature",
+    "value": 35.2,
+    "status": "low",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "bilirubin",
+    "value": 0.04,
+    "status": "low",
+    "format": "table",
+    "range": "printed"
+   },
+   {
+    "key": "hba1c",
+    "value": 5.41,
+    "status": "normal",
+    "format": "table",
+    "range": "printed"
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "text": "Sagarmatha Diagnostics\nPatient Name: Arjun Patel    Age/Sex: 37/M\nDOB: 24/10/1994    Phone: 9831608944\nAddress: 192 Main Bazaar, Baneshwor\nReferred by: Dr. Meena Nair    Collected: 20/8/2026\nनाम: अर्जुन पटेल\n\nSodium: 143 mmol/L\nPLT: 60,000 /µL\nLDL cholesterol: 217 mg/dL\nGlycated haemoglobin: 5.64 %\nVitamin B12: 649 pg/mL\nUric acid: 6.53 mg/dL\nTemperature: 36.2 °C\n\nImpression: Arjun is a 37-year-old resident of Baneshwor; advised review with Dr. Meena Nair in two weeks.\nMr. Samjhana Bhusal called to ask about the results.\nCase discussed with Dr. Suresh Ghimire.\nSample collected by Rekha Tamang at 7:40 am.\nReported by: Dr. Meena Nair",
+  "patientName": "Arjun Patel",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Sagarmatha Diagnostics",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Arjun Patel",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "24/10/1994",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "9831608944",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "192 Main Bazaar",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Meena Nair",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "20/8/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "अर्जुन पटेल",
+    "context": "labelled",
+    "script": "devanagari"
+   },
+   {
+    "type": "address",
+    "value": "Baneshwor",
+    "context": "narrative"
+   },
+   {
+    "type": "name",
+    "value": "Arjun",
+    "context": "narrative"
+   },
+   {
+    "type": "relative",
+    "value": "Samjhana Bhusal",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "clinician",
+    "value": "Suresh Ghimire",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "relative",
+    "value": "Rekha Tamang",
+    "context": "narrative",
+    "rareName": false
+   },
+   {
+    "type": "clinician",
+    "value": "Meena Nair",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "sodium",
+    "value": 143,
+    "status": "normal",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "platelets",
+    "value": 60000,
+    "status": "low",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "ldl",
+    "value": 217,
+    "status": "high",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "hba1c",
+    "value": 5.64,
+    "status": "high",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "vitamin_b12",
+    "value": 649,
+    "status": "normal",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "uric_acid",
+    "value": 6.53,
+    "status": "normal",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "temperature",
+    "value": 36.2,
+    "status": "normal",
+    "format": "colon",
+    "range": "built-in"
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "text": "Sagarmatha Diagnostics\nPatient Name: Dipesh Magar    Age/Sex: 68/M\nDOB: 1969-09-08    Phone: 9865062223\nAddress: 40 Tinkune Chowk, Hetauda\nEmail: dipesh.magar79@gmail.com\nReferred by: Dr. Sunita Chaudhary    Collected: 28/2/2026\nConsultant pathologist: Dr. Pooja Rijal\n\nUric acid 7.09 mg/dL (Ref: 3.45 - 7.35)\nHematocrit 50 % (Ref: 35.3 - 50.2)\nTG 107 mg/dL (Ref: < 152)\nLDL cholesterol 102 mg/dL (Ref: < 123)\nRed blood cells 3.86 million/µL (Ref: 4.54 - 6.11)\nBUN 24.6 mg/dL (Ref: 6.96 - 21.6)\nPlatelet count 326,555 /µL (Ref: 143487 - 430683)\nCalcium 10.2 mg/dL (Ref: 8.61 - 10.4)\nSodium 131 mmol/L (Ref: 137 - 138)\nBlood pressure: 139/80 mmHg\n\nImpression: Findings discussed with Dipesh Magar. Repeat tests after September 2026.\nResult explained to his brother, Sunita Tamang.\nCase discussed with Dr. Pooja Rijal.\nReported by: Dr. Sunita Chaudhary",
+  "patientName": "Dipesh Magar",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Sagarmatha Diagnostics",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Dipesh Magar",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "1969-09-08",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "9865062223",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "40 Tinkune Chowk",
+    "context": "labelled"
+   },
+   {
+    "type": "email",
+    "value": "dipesh.magar79@gmail.com",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Sunita Chaudhary",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "28/2/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Pooja Rijal",
+    "context": "labelled",
+    "rareName": true
+   },
+   {
+    "type": "name",
+    "value": "Dipesh Magar",
+    "context": "narrative"
+   },
+   {
+    "type": "date",
+    "value": "September 2026",
+    "context": "narrative"
+   },
+   {
+    "type": "relative",
+    "value": "Sunita Tamang",
+    "context": "narrative",
+    "rareName": false
+   },
+   {
+    "type": "clinician",
+    "value": "Pooja Rijal",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "clinician",
+    "value": "Sunita Chaudhary",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "uric_acid",
+    "value": 7.09,
+    "status": "normal",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "hematocrit",
+    "value": 50,
+    "status": "normal",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "triglycerides",
+    "value": 107,
+    "status": "normal",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "ldl",
+    "value": 102,
+    "status": "normal",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "rbc",
+    "value": 3.86,
+    "status": "low",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "urea",
+    "value": 24.6,
+    "status": "high",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "platelets",
+    "value": 326555,
+    "status": "normal",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "calcium",
+    "value": 10.2,
+    "status": "normal",
+    "format": "inline-ref",
+    "range": "printed"
+   },
+   {
+    "key": "sodium",
+    "value": 131,
+    "status": "low",
+    "format": "inline-ref",
+    "range": "printed"
+   }
+  ],
+  "bp": {
+   "sys": 139,
+   "dia": 80
+  }
+ },
+ {
+  "id": 5,
+  "text": "Sagarmatha Diagnostics\nPatient Name: Deepa Tamang    Age/Sex: 77/F\nDOB: 8 November 1958    Phone: 9825757782\nAddress: 189 Lakeside Road, Lalitpur\nID No: 60-81-55-47002\nEmail: deepa.tamang60@outlook.com\nReferred by: Dr. Bikash Verma    Collected: 11/12/2026\n\nTSH: 3.97 mIU/L\nSerum creatinine: 137 µmol/L\nTotal cholesterol: 2.59 mmol/L\nPotassium: 3.45 mmol/L\nBlood pressure: 104/87 mmHg\n\nImpression: Reviewed on 11/12/2026. Deepa Tamang can be reached on 9825757782 for follow-up.\nMr. Ujjwal Dhungana called to ask about the results.\nSample collected by Aayusha Bhusal at 7:40 am.\nReported by: Dr. Bikash Verma",
+  "patientName": "Deepa Tamang",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Sagarmatha Diagnostics",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Deepa Tamang",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "8 November 1958",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "9825757782",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "189 Lakeside Road",
+    "context": "labelled"
+   },
+   {
+    "type": "national_id",
+    "value": "60-81-55-47002",
+    "context": "labelled"
+   },
+   {
+    "type": "email",
+    "value": "deepa.tamang60@outlook.com",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Bikash Verma",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "11/12/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Deepa Tamang",
+    "context": "narrative"
+   },
+   {
+    "type": "phone",
+    "value": "9825757782",
+    "context": "narrative"
+   },
+   {
+    "type": "relative",
+    "value": "Ujjwal Dhungana",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "relative",
+    "value": "Aayusha Bhusal",
+    "context": "narrative",
+    "rareName": true
+   },
+   {
+    "type": "clinician",
+    "value": "Bikash Verma",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "tsh",
+    "value": 3.97,
+    "status": "normal",
+    "format": "colon",
+    "range": "built-in"
+   },
+   {
+    "key": "creatinine",
+    "value": 1.55,
+    "status": "high",
+    "format": "colon",
+    "range": "built-in",
+    "unit": "µmol/L"
+   },
+   {
+    "key": "total_cholesterol",
+    "value": 100.16,
+    "status": "normal",
+    "format": "colon",
+    "range": "built-in",
+    "unit": "mmol/L"
+   },
+   {
+    "key": "potassium",
+    "value": 3.45,
+    "status": "low",
+    "format": "colon",
+    "range": "built-in"
+   }
+  ],
+  "bp": {
+   "sys": 104,
+   "dia": 87
+  }
+ }
+]

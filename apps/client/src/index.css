@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased selection:bg-sky-100 selection:text-sky-900;
+  }
+}
+
+/* Custom Healthcare UI scrollbars and utilities */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.15); }
+}
+
+.pulse-dot {
+  animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Phones: tables become one card per row, each value labelled with its column name. */
+@media (max-width: 639px) {
+  .ml-table thead { display: none; }
+  .ml-table, .ml-table tbody, .ml-table tr, .ml-table td { display: block; width: 100%; }
+  .ml-table tbody tr { padding: 0.75rem 0.25rem; }
+  .ml-table td { padding: 0.35rem 0.75rem !important; text-align: left !important; }
+  .ml-table td[data-label] { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; }
+  .ml-table td[data-label]::before {
+    content: attr(data-label);
+    flex-shrink: 0;
+    max-width: 45%;
+    font-weight: 700;
+    color: #64748b;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: normal;
+  }
+  .ml-table td[data-label] > * { text-align: right; }
+  .ml-table td:not([data-label]):not([colspan]) { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 0.5rem; }
+}
+
+/* Touch screens and phones: every button and link-button is at least 44px tall and wide enough to hit. */
+@media (pointer: coarse), (max-width: 639px) {
+  button:not(.ml-compact),
+  [role='button'],
+  a.inline-flex,
+  select,
+  input:not([type='checkbox']):not([type='radio']):not([type='range']) {
+    min-height: 44px;
+  }
+  button:not(.ml-compact) { min-width: 44px; }
+  .ml-tap { display: inline-flex; align-items: center; min-height: 44px; }
+}

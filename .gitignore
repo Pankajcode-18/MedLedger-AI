@@ -75,3 +75,16 @@ typings/
 
 # Serverless directories
 .serverless
+
+# MedLedger: encryption master key and encrypted file store (never commit these)
+.medledger-master.key
+**/encrypted-files/
+
+# Test output and local deployments
+test-results/
+playwright-report/
+blockchain/deployments/localhost.json
+# Phase 11 study data: real (anonymised) reports and participant answers stay on this machine
+docs/study/data/*
+!docs/study/data/README.md
+docs/study/results/review_pack.html

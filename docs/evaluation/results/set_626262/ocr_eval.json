@@ -1,0 +1,26 @@
+{
+ "clean": {
+  "kind": "clean",
+  "pages": 60,
+  "cer": 0.0031643443172829325,
+  "secondsPerPage": 1.1155558864333335,
+  "meanConfidence": 93.3,
+  "valueRecall": 0.9746835443037974,
+  "abnormalF1": 0.9844020797227038,
+  "abnormalPrecision": 0.9964912280701754,
+  "abnormalRecall": 0.9726027397260274,
+  "deidRecall": 1
+ },
+ "degraded": {
+  "kind": "degraded",
+  "pages": 60,
+  "cer": 0.11656996493661048,
+  "secondsPerPage": 18.827947913566668,
+  "meanConfidence": 69.68333333333334,
+  "valueRecall": 0.44936708860759494,
+  "abnormalF1": 0.6258823529411764,
+  "abnormalPrecision": 1,
+  "abnormalRecall": 0.4554794520547945,
+  "deidRecall": 0.9778434268833087
+ }
+}

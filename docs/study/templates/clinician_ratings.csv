@@ -1,0 +1,2 @@
+# Filled from the review pack: one row per summary per rater (A or B). Scores 1-5. harmful_yes_no = yes if anything could lead a patient to harm.
+summary_id,file,rater,accuracy_1to5,usefulness_1to5,harmful_yes_no,harm_description,comment

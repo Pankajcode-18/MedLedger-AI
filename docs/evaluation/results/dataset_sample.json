@@ -1,0 +1,541 @@
+[
+ {
+  "id": 1,
+  "text": "City Diagnostic Lab\nPatient Name: Anjali Rai    Age/Sex: 32/M\nDOB: 26/02/1971    Phone: +91 08478 55133\nAddress: 166 Durbar Marg, Lucknow\nReferred by: Dr. Amit Khadka    Collected: 1/6/2026\n\nBlood urea nitrogen - 39.1 mg/dL\nTSH - 9.3 mIU/L\nTemperature - 39 °C\nSGPT - 62.7 U/L\nLDL cholesterol - 112 mg/dL\nSerum creatinine - 0.24 mg/dL\nBlood pressure: 120/64 mmHg\n\nImpression: Findings discussed with Anjali Rai. Repeat tests after February 2026.\nReported by: Dr. Amit Khadka",
+  "patientName": "Anjali Rai",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "City Diagnostic Lab",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Anjali Rai",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "26/02/1971",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "+91 08478 55133",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "166 Durbar Marg",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Amit Khadka",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "1/6/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Anjali Rai",
+    "context": "narrative"
+   },
+   {
+    "type": "date",
+    "value": "February 2026",
+    "context": "narrative"
+   },
+   {
+    "type": "clinician",
+    "value": "Amit Khadka",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "urea",
+    "value": 39.1,
+    "status": "high",
+    "format": "dash"
+   },
+   {
+    "key": "tsh",
+    "value": 9.3,
+    "status": "high",
+    "format": "dash"
+   },
+   {
+    "key": "temperature",
+    "value": 39,
+    "status": "high",
+    "format": "dash"
+   },
+   {
+    "key": "alt",
+    "value": 62.7,
+    "status": "high",
+    "format": "dash"
+   },
+   {
+    "key": "ldl",
+    "value": 112,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "creatinine",
+    "value": 0.24,
+    "status": "low",
+    "format": "dash"
+   }
+  ],
+  "bp": {
+   "sys": 120,
+   "dia": 64
+  }
+ },
+ {
+  "id": 2,
+  "text": "Himal Care Hospital\nPatient Name: Vikram Rai    Age/Sex: 87/M\nDOB: 1999-06-15    Phone: +91 20547 68959\nAddress: 117 Tinkune Chowk, Dharan\nID No: 8202 4456 9129\nReferred by: Dr. Prakash Reddy    Collected: 26/4/2026\n\nSGPT - 2.8 U/L\nVitamin B12 - 422 pg/mL\nSpO2 - 105 %\nVitamin D - 30 ng/mL\nHDL - 89 mg/dL\n\nImpression: Reviewed on 26/4/2026. Vikram Rai can be reached on +91 20547 68959 for follow-up.\nReported by: Dr. Prakash Reddy",
+  "patientName": "Vikram Rai",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Himal Care Hospital",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Vikram Rai",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "1999-06-15",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "+91 20547 68959",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "117 Tinkune Chowk",
+    "context": "labelled"
+   },
+   {
+    "type": "national_id",
+    "value": "8202 4456 9129",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Prakash Reddy",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "26/4/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Vikram Rai",
+    "context": "narrative"
+   },
+   {
+    "type": "phone",
+    "value": "+91 20547 68959",
+    "context": "narrative"
+   },
+   {
+    "type": "clinician",
+    "value": "Prakash Reddy",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "alt",
+    "value": 2.8,
+    "status": "low",
+    "format": "dash"
+   },
+   {
+    "key": "vitamin_b12",
+    "value": 422,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "spo2",
+    "value": 105,
+    "status": "high",
+    "format": "dash"
+   },
+   {
+    "key": "vitamin_d",
+    "value": 30,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "hdl",
+    "value": 89,
+    "status": "normal",
+    "format": "dash"
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "text": "Sagarmatha Diagnostics\nPatient Name: Nisha Magar    Age/Sex: 47/M\nDOB: 1973-09-12    Phone: 01-0472116\nAddress: 65 Station Road, Patna\nEmail: nisha.magar07@outlook.com\nReferred by: Dr. Rajesh Pandey    Collected: 18/6/2026\n\nESR - 17.2 mm/hr\nRed blood cells - 5.2 million/µL\nTemp - 38.1 °C\nHematocrit - 46 %\nWBC - 6656 /µL\nSerum creatinine - 0.39 mg/dL\nUric acid - 10.31 mg/dL\n\nImpression: Findings discussed with Nisha Magar. Repeat tests after September 2026.\nReported by: Dr. Rajesh Pandey",
+  "patientName": "Nisha Magar",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Sagarmatha Diagnostics",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Nisha Magar",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "1973-09-12",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "01-0472116",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "65 Station Road",
+    "context": "labelled"
+   },
+   {
+    "type": "email",
+    "value": "nisha.magar07@outlook.com",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Rajesh Pandey",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "18/6/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Nisha Magar",
+    "context": "narrative"
+   },
+   {
+    "type": "date",
+    "value": "September 2026",
+    "context": "narrative"
+   },
+   {
+    "type": "clinician",
+    "value": "Rajesh Pandey",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "esr",
+    "value": 17.2,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "rbc",
+    "value": 5.2,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "temperature",
+    "value": 38.1,
+    "status": "high",
+    "format": "dash"
+   },
+   {
+    "key": "hematocrit",
+    "value": 46,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "wbc",
+    "value": 6656,
+    "status": "normal",
+    "format": "dash"
+   },
+   {
+    "key": "creatinine",
+    "value": 0.39,
+    "status": "low",
+    "format": "dash"
+   },
+   {
+    "key": "uric_acid",
+    "value": 10.31,
+    "status": "high",
+    "format": "dash"
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "text": "Kaveri Diagnostic Centre\nPatient Name: Sanjay Pandey    Age/Sex: 20/F\nDOB: 15 February 1956    Phone: +91 87422 19432\nAddress: 60 Station Road, Hetauda\nEmail: sanjay.pandey97@outlook.com\nReferred by: Dr. Kabita Joshi    Collected: 19/8/2026\n\nFasting glucose 59 mg/dL (Ref: 70 - 100)\nSerum creatinine 0.24 mg/dL (Ref: 0.6 - 1.3)\nBUN 2.8 mg/dL (Ref: 7 - 20)\nVitamin D 38 ng/mL (Ref: 20 - 100)\nHDL 80 mg/dL (Ref: > 40)\nSodium 133 mmol/L (Ref: 135 - 145)\nTLC 6196 /µL (Ref: 4500 - 11000)\nTemp 38 °C (Ref: 36.1 - 37.5)\nLDL 90 mg/dL (Ref: < 129)\nBlood pressure: 163/67 mmHg\n\nImpression: Findings discussed with Sanjay Pandey. Repeat tests after February 2026.\nReported by: Dr. Kabita Joshi",
+  "patientName": "Sanjay Pandey",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Kaveri Diagnostic Centre",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Sanjay Pandey",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "15 February 1956",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "+91 87422 19432",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "60 Station Road",
+    "context": "labelled"
+   },
+   {
+    "type": "email",
+    "value": "sanjay.pandey97@outlook.com",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Kabita Joshi",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "19/8/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Sanjay Pandey",
+    "context": "narrative"
+   },
+   {
+    "type": "date",
+    "value": "February 2026",
+    "context": "narrative"
+   },
+   {
+    "type": "clinician",
+    "value": "Kabita Joshi",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "fasting_glucose",
+    "value": 59,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "creatinine",
+    "value": 0.24,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "urea",
+    "value": 2.8,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "vitamin_d",
+    "value": 38,
+    "status": "normal",
+    "format": "inline-ref"
+   },
+   {
+    "key": "hdl",
+    "value": 80,
+    "status": "normal",
+    "format": "inline-ref"
+   },
+   {
+    "key": "sodium",
+    "value": 133,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "wbc",
+    "value": 6196,
+    "status": "normal",
+    "format": "inline-ref"
+   },
+   {
+    "key": "temperature",
+    "value": 38,
+    "status": "high",
+    "format": "inline-ref"
+   },
+   {
+    "key": "ldl",
+    "value": 90,
+    "status": "normal",
+    "format": "inline-ref"
+   }
+  ],
+  "bp": {
+   "sys": 163,
+   "dia": 67
+  }
+ },
+ {
+  "id": 5,
+  "text": "Lumbini Teaching Hospital\nPatient Name: Meena Bhattarai    Age/Sex: 64/F\nDOB: 24/05/1986    Phone: +977 9822213078\nAddress: 116 Tinkune Chowk, Butwal\nID No: 33-28-03-29132\nReferred by: Dr. Kabita Verma    Collected: 18/10/2026\n\nPulse 89 bpm (Ref: 60 - 100)\nSodium 129 mmol/L (Ref: 135 - 145)\nBlood urea nitrogen 2.8 mg/dL (Ref: 7 - 20)\nSGPT 15.8 U/L (Ref: 7 - 56)\nPotassium 6.12 mmol/L (Ref: 3.5 - 5)\nFasting glucose 51 mg/dL (Ref: 70 - 100)\nRed blood cells 7.18 million/µL (Ref: 4.2 - 5.9)\nOxygen saturation 96 % (Ref: 95 - 100)\nVitamin B12 80 pg/mL (Ref: 200 - 900)\n\nImpression: Meena is a 64-year-old resident of Butwal; advised review with Dr. Kabita Verma in two weeks.\nReported by: Dr. Kabita Verma",
+  "patientName": "Meena Bhattarai",
+  "pii": [
+   {
+    "type": "facility",
+    "value": "Lumbini Teaching Hospital",
+    "context": "labelled"
+   },
+   {
+    "type": "name",
+    "value": "Meena Bhattarai",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "24/05/1986",
+    "context": "labelled"
+   },
+   {
+    "type": "phone",
+    "value": "+977 9822213078",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "116 Tinkune Chowk",
+    "context": "labelled"
+   },
+   {
+    "type": "national_id",
+    "value": "33-28-03-29132",
+    "context": "labelled"
+   },
+   {
+    "type": "clinician",
+    "value": "Kabita Verma",
+    "context": "labelled"
+   },
+   {
+    "type": "date",
+    "value": "18/10/2026",
+    "context": "labelled"
+   },
+   {
+    "type": "address",
+    "value": "Butwal",
+    "context": "narrative"
+   },
+   {
+    "type": "name",
+    "value": "Meena",
+    "context": "narrative"
+   },
+   {
+    "type": "clinician",
+    "value": "Kabita Verma",
+    "context": "labelled"
+   }
+  ],
+  "labs": [
+   {
+    "key": "heart_rate",
+    "value": 89,
+    "status": "normal",
+    "format": "inline-ref"
+   },
+   {
+    "key": "sodium",
+    "value": 129,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "urea",
+    "value": 2.8,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "alt",
+    "value": 15.8,
+    "status": "normal",
+    "format": "inline-ref"
+   },
+   {
+    "key": "potassium",
+    "value": 6.12,
+    "status": "high",
+    "format": "inline-ref"
+   },
+   {
+    "key": "fasting_glucose",
+    "value": 51,
+    "status": "low",
+    "format": "inline-ref"
+   },
+   {
+    "key": "rbc",
+    "value": 7.18,
+    "status": "high",
+    "format": "inline-ref"
+   },
+   {
+    "key": "spo2",
+    "value": 96,
+    "status": "normal",
+    "format": "inline-ref"
+   },
+   {
+    "key": "vitamin_b12",
+    "value": 80,
+    "status": "low",
+    "format": "inline-ref"
+   }
+  ]
+ }
+]

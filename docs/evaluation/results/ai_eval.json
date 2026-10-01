@@ -1,0 +1,464 @@
+{
+ "reports": 1000,
+ "seed": 777001,
+ "hard": false,
+ "deidentification": {
+  "withoutRegisteredName": {
+   "withNames": false,
+   "recall": 1,
+   "total": 11233,
+   "removed": 11233,
+   "reportsFullyClean": 1,
+   "msPerReport": 1.3222611310000003,
+   "byType": {
+    "facility": {
+     "total": 1000,
+     "removed": 1000
+    },
+    "name": {
+     "total": 2000,
+     "removed": 2000
+    },
+    "date": {
+     "total": 2348,
+     "removed": 2348
+    },
+    "phone": {
+     "total": 1335,
+     "removed": 1335
+    },
+    "address": {
+     "total": 1317,
+     "removed": 1317
+    },
+    "clinician": {
+     "total": 2000,
+     "removed": 2000
+    },
+    "national_id": {
+     "total": 606,
+     "removed": 606
+    },
+    "email": {
+     "total": 627,
+     "removed": 627
+    }
+   },
+   "byCtx": {
+    "labelled": {
+     "total": 9233,
+     "removed": 9233
+    },
+    "narrative": {
+     "total": 2000,
+     "removed": 2000
+    }
+   },
+   "byGroup": {},
+   "misses": []
+  },
+  "withRegisteredName": {
+   "withNames": true,
+   "recall": 1,
+   "total": 11233,
+   "removed": 11233,
+   "reportsFullyClean": 1,
+   "msPerReport": 0.4407099480000002,
+   "byType": {
+    "facility": {
+     "total": 1000,
+     "removed": 1000
+    },
+    "name": {
+     "total": 2000,
+     "removed": 2000
+    },
+    "date": {
+     "total": 2348,
+     "removed": 2348
+    },
+    "phone": {
+     "total": 1335,
+     "removed": 1335
+    },
+    "address": {
+     "total": 1317,
+     "removed": 1317
+    },
+    "clinician": {
+     "total": 2000,
+     "removed": 2000
+    },
+    "national_id": {
+     "total": 606,
+     "removed": 606
+    },
+    "email": {
+     "total": 627,
+     "removed": 627
+    }
+   },
+   "byCtx": {
+    "labelled": {
+     "total": 9233,
+     "removed": 9233
+    },
+    "narrative": {
+     "total": 2000,
+     "removed": 2000
+    }
+   },
+   "byGroup": {},
+   "misses": []
+  }
+ },
+ "extraction": {
+  "original": {
+   "valueRecall": 1,
+   "valuePrecision": 1,
+   "extraValues": 0,
+   "total": 7461,
+   "statusAccuracy": 1,
+   "abnormal": {
+    "tp": 4463,
+    "fp": 0,
+    "fn": 0,
+    "tn": 2998,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "specificity": 1
+   },
+   "byFormat": {
+    "dash": {
+     "found": 1535,
+     "total": 1535,
+     "correct": 1535
+    },
+    "bp": {
+     "found": 970,
+     "total": 970,
+     "correct": 970
+    },
+    "inline-ref": {
+     "found": 1773,
+     "total": 1773,
+     "correct": 1773
+    },
+    "table": {
+     "found": 1541,
+     "total": 1541,
+     "correct": 1541
+    },
+    "colon": {
+     "found": 1642,
+     "total": 1642,
+     "correct": 1642
+    }
+   },
+   "byKey": {
+    "urea": {
+     "found": 228,
+     "total": 228
+    },
+    "tsh": {
+     "found": 228,
+     "total": 228
+    },
+    "temperature": {
+     "found": 225,
+     "total": 225
+    },
+    "alt": {
+     "found": 232,
+     "total": 232
+    },
+    "ldl": {
+     "found": 242,
+     "total": 242
+    },
+    "creatinine": {
+     "found": 260,
+     "total": 260
+    },
+    "systolic_bp": {
+     "found": 485,
+     "total": 485
+    },
+    "diastolic_bp": {
+     "found": 485,
+     "total": 485
+    },
+    "vitamin_b12": {
+     "found": 243,
+     "total": 243
+    },
+    "spo2": {
+     "found": 251,
+     "total": 251
+    },
+    "vitamin_d": {
+     "found": 244,
+     "total": 244
+    },
+    "hdl": {
+     "found": 248,
+     "total": 248
+    },
+    "esr": {
+     "found": 172,
+     "total": 172
+    },
+    "rbc": {
+     "found": 218,
+     "total": 218
+    },
+    "hematocrit": {
+     "found": 216,
+     "total": 216
+    },
+    "wbc": {
+     "found": 242,
+     "total": 242
+    },
+    "uric_acid": {
+     "found": 210,
+     "total": 210
+    },
+    "fasting_glucose": {
+     "found": 236,
+     "total": 236
+    },
+    "sodium": {
+     "found": 222,
+     "total": 222
+    },
+    "heart_rate": {
+     "found": 248,
+     "total": 248
+    },
+    "potassium": {
+     "found": 243,
+     "total": 243
+    },
+    "triglycerides": {
+     "found": 256,
+     "total": 256
+    },
+    "total_cholesterol": {
+     "found": 223,
+     "total": 223
+    },
+    "platelets": {
+     "found": 210,
+     "total": 210
+    },
+    "resp_rate": {
+     "found": 240,
+     "total": 240
+    },
+    "bilirubin": {
+     "found": 244,
+     "total": 244
+    },
+    "calcium": {
+     "found": 218,
+     "total": 218
+    },
+    "hemoglobin": {
+     "found": 225,
+     "total": 225
+    },
+    "hba1c": {
+     "found": 234,
+     "total": 234
+    },
+    "ast": {
+     "found": 233,
+     "total": 233
+    }
+   }
+  },
+  "afterDeidentification": {
+   "valueRecall": 1,
+   "valuePrecision": 1,
+   "extraValues": 0,
+   "total": 7461,
+   "statusAccuracy": 1,
+   "abnormal": {
+    "tp": 4463,
+    "fp": 0,
+    "fn": 0,
+    "tn": 2998,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "specificity": 1
+   },
+   "byFormat": {
+    "dash": {
+     "found": 1535,
+     "total": 1535,
+     "correct": 1535
+    },
+    "bp": {
+     "found": 970,
+     "total": 970,
+     "correct": 970
+    },
+    "inline-ref": {
+     "found": 1773,
+     "total": 1773,
+     "correct": 1773
+    },
+    "table": {
+     "found": 1541,
+     "total": 1541,
+     "correct": 1541
+    },
+    "colon": {
+     "found": 1642,
+     "total": 1642,
+     "correct": 1642
+    }
+   },
+   "byKey": {
+    "urea": {
+     "found": 228,
+     "total": 228
+    },
+    "tsh": {
+     "found": 228,
+     "total": 228
+    },
+    "temperature": {
+     "found": 225,
+     "total": 225
+    },
+    "alt": {
+     "found": 232,
+     "total": 232
+    },
+    "ldl": {
+     "found": 242,
+     "total": 242
+    },
+    "creatinine": {
+     "found": 260,
+     "total": 260
+    },
+    "systolic_bp": {
+     "found": 485,
+     "total": 485
+    },
+    "diastolic_bp": {
+     "found": 485,
+     "total": 485
+    },
+    "vitamin_b12": {
+     "found": 243,
+     "total": 243
+    },
+    "spo2": {
+     "found": 251,
+     "total": 251
+    },
+    "vitamin_d": {
+     "found": 244,
+     "total": 244
+    },
+    "hdl": {
+     "found": 248,
+     "total": 248
+    },
+    "esr": {
+     "found": 172,
+     "total": 172
+    },
+    "rbc": {
+     "found": 218,
+     "total": 218
+    },
+    "hematocrit": {
+     "found": 216,
+     "total": 216
+    },
+    "wbc": {
+     "found": 242,
+     "total": 242
+    },
+    "uric_acid": {
+     "found": 210,
+     "total": 210
+    },
+    "fasting_glucose": {
+     "found": 236,
+     "total": 236
+    },
+    "sodium": {
+     "found": 222,
+     "total": 222
+    },
+    "heart_rate": {
+     "found": 248,
+     "total": 248
+    },
+    "potassium": {
+     "found": 243,
+     "total": 243
+    },
+    "triglycerides": {
+     "found": 256,
+     "total": 256
+    },
+    "total_cholesterol": {
+     "found": 223,
+     "total": 223
+    },
+    "platelets": {
+     "found": 210,
+     "total": 210
+    },
+    "resp_rate": {
+     "found": 240,
+     "total": 240
+    },
+    "bilirubin": {
+     "found": 244,
+     "total": 244
+    },
+    "calcium": {
+     "found": 218,
+     "total": 218
+    },
+    "hemoglobin": {
+     "found": 225,
+     "total": 225
+    },
+    "hba1c": {
+     "found": 234,
+     "total": 234
+    },
+    "ast": {
+     "found": 233,
+     "total": 233
+    }
+   }
+  }
+ },
+ "drug": {
+  "drugs": 77,
+  "rules": 41,
+  "pairsTested": 356,
+  "positives": 178,
+  "tp": 178,
+  "fp": 0,
+  "fn": 0,
+  "tn": 178,
+  "precision": 1,
+  "recall": 1,
+  "f1": 1,
+  "specificity": 1,
+  "nameRecognition": 1
+ }
+}

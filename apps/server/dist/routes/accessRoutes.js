@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const accessController_js_1 = require("../controllers/accessController.js");
+const auth_js_1 = require("../middleware/auth.js");
+const router = (0, express_1.Router)();
+router.post('/request', (0, auth_js_1.authMiddleware)(['doctor', 'hospital', 'admin']), (req, res) => accessController_js_1.accessController.requestAccess(req, res));
+router.post('/grant', (0, auth_js_1.authMiddleware)(['patient', 'admin']), (req, res) => accessController_js_1.accessController.grantAccess(req, res));
+router.post('/reject', (0, auth_js_1.authMiddleware)(['patient', 'admin']), (req, res) => accessController_js_1.accessController.rejectAccess(req, res));
+router.post('/revoke', (0, auth_js_1.authMiddleware)(['patient', 'admin']), (req, res) => accessController_js_1.accessController.revokeAccess(req, res));
+router.get('/status', (0, auth_js_1.authMiddleware)(), (req, res) => accessController_js_1.accessController.getStatus(req, res));
+exports.default = router;

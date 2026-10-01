@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const recordController_js_1 = require("../controllers/recordController.js");
+const auth_js_1 = require("../middleware/auth.js");
+const upload_js_1 = require("../middleware/upload.js");
+const router = (0, express_1.Router)();
+router.get('/', (0, auth_js_1.authMiddleware)(), (req, res) => recordController_js_1.recordController.getRecords(req, res));
+router.get('/storage/status', (0, auth_js_1.authMiddleware)(['admin', 'system-admin']), (req, res) => recordController_js_1.recordController.storageStatus(req, res));
+router.post('/upload', (0, auth_js_1.authMiddleware)(), (0, upload_js_1.singleUpload)('file'), (req, res) => recordController_js_1.recordController.uploadRecord(req, res));
+router.get('/:id/download', (0, auth_js_1.authMiddleware)(), (req, res) => recordController_js_1.recordController.downloadRecord(req, res));
+router.get('/:id/text', (0, auth_js_1.authMiddleware)(), (req, res) => recordController_js_1.recordController.getRecordText(req, res));
+router.post('/:id/extract', (0, auth_js_1.authMiddleware)(), (req, res) => recordController_js_1.recordController.reextractRecord(req, res));
+router.get('/:id/verify', (0, auth_js_1.authMiddleware)(), (req, res) => recordController_js_1.recordController.verifyRecord(req, res));
+exports.default = router;

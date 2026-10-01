@@ -1,0 +1,49 @@
+{
+  "name": "medledger-server",
+  "version": "1.0.0",
+  "description": "MedLedger AI - Enterprise TypeScript Express Backend",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "type-check": "tsc --noEmit",
+    "keys:rotate": "tsx scripts/rotate-keys.ts",
+    "test": "node --import tsx --test tests/auth.test.ts tests/ai.test.ts tests/deidentify.test.ts tests/storage.test.ts tests/ocr.test.ts tests/trends.test.ts tests/wallet.test.ts tests/phase1.test.ts tests/phase2.test.ts tests/phase3.test.ts tests/ledger.test.ts tests/chain.test.ts tests/phase6.test.ts tests/phase8.test.ts tests/phase9.test.ts tests/phase10.test.ts tests/phase11.test.ts"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.100",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.17.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mammoth": "^1.12.3",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.73.0",
+    "pdfjs-dist": "5.6.205",
+    "sharp": "^0.34.5",
+    "tesseract.js": "^7.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

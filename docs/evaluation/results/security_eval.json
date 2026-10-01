@@ -1,0 +1,156 @@
+{
+ "trials": 500,
+ "controlsReleased": 500,
+ "tamper": {
+  "Ciphertext bit flip": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "gcm-tag": 500
+   }
+  },
+  "Ciphertext truncation": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "gcm-tag": 500
+   }
+  },
+  "IV modified": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "gcm-tag": 500
+   }
+  },
+  "Auth tag modified": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "gcm-tag": 500
+   }
+  },
+  "Wrapped key modified": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "key-unwrap": 500
+   }
+  },
+  "Key swapped from other record": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "key-unwrap": 500
+   }
+  },
+  "File swapped from other record": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "gcm-tag": 500
+   }
+  },
+  "Record moved to other patient": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "gcm-tag": 500
+   }
+  },
+  "Fingerprint in metadata edited": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "fingerprint": 500
+   }
+  },
+  "Blob edited, checksum not updated": {
+   "trials": 500,
+   "detected": 500,
+   "layers": {
+    "checksum": 500
+   }
+  }
+ },
+ "chain": {
+  "Payload field edited": {
+   "trials": 200,
+   "detected": 200,
+   "locatedExactly": 200
+  },
+  "Timestamp edited": {
+   "trials": 200,
+   "detected": 200,
+   "locatedExactly": 200
+  },
+  "Entry deleted": {
+   "trials": 200,
+   "detected": 200,
+   "locatedExactly": 200
+  },
+  "Entries reordered": {
+   "trials": 200,
+   "detected": 200,
+   "locatedExactly": 200
+  },
+  "Entry edited and re-hashed": {
+   "trials": 200,
+   "detected": 200,
+   "locatedExactly": 200
+  },
+  "Forged entry inserted": {
+   "trials": 200,
+   "detected": 200,
+   "locatedExactly": 200
+  }
+ },
+ "chainIntactControls": "200/200",
+ "perf": [
+  {
+   "sizeMB": 0.1,
+   "sealMs": 0.625144,
+   "openMs": 0.610617,
+   "sha256Ms": 0.276376,
+   "sealMBps": 159.96314449150915,
+   "openMBps": 163.7687781375232,
+   "ciphertextOverheadBytes": 0,
+   "metadataBytes": 384,
+   "overheadPct": 0.36620954052146715
+  },
+  {
+   "sizeMB": 1,
+   "sealMs": 6.060998,
+   "openMs": 6.015175,
+   "sha256Ms": 2.661321,
+   "sealMBps": 164.98933014001986,
+   "openMBps": 166.2462023133159,
+   "ciphertextOverheadBytes": 0,
+   "metadataBytes": 384,
+   "overheadPct": 0.03662109375
+  },
+  {
+   "sizeMB": 5,
+   "sealMs": 31.543005,
+   "openMs": 31.535568,
+   "sha256Ms": 13.273401,
+   "sealMBps": 158.51374972042137,
+   "openMBps": 158.55113185213597,
+   "ciphertextOverheadBytes": 0,
+   "metadataBytes": 384,
+   "overheadPct": 0.00732421875
+  },
+  {
+   "sizeMB": 10,
+   "sealMs": 65.37812,
+   "openMs": 67.920571,
+   "sha256Ms": 26.793628,
+   "sealMBps": 152.95637133646548,
+   "openMBps": 147.23079992952356,
+   "ciphertextOverheadBytes": 0,
+   "metadataBytes": 384,
+   "overheadPct": 0.003662109375
+  }
+ ],
+ "node": "v22.22.2"
+}
