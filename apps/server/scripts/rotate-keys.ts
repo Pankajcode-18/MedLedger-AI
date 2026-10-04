@@ -7,9 +7,10 @@
  */
 import { rotateMasterKey } from '../src/services/recordMigration.js';
 
-const result = rotateMasterKey();
-console.log(
-  `[Keys] Current master key ${result.currentKeyId}: re-wrapped ${result.rewrappedFiles} file key(s) and re-sealed ${result.resealedNotes} note(s).` +
-    (result.failed.length ? ` Could not re-wrap: ${result.failed.join(', ')} (see warnings above).` : '')
-);
-if (result.failed.length) process.exitCode = 1;
+rotateMasterKey().then((result) => {
+  console.log(
+    `[Keys] Current master key ${result.currentKeyId}: re-wrapped ${result.rewrappedFiles} file key(s) and re-sealed ${result.resealedNotes} note(s).` +
+      (result.failed.length ? ` Could not re-wrap: ${result.failed.join(', ')} (see warnings above).` : '')
+  );
+  if (result.failed.length) process.exitCode = 1;
+});

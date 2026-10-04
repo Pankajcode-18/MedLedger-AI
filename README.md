@@ -196,6 +196,7 @@ These go in `apps/server/.env`; `.env.example` explains every line. The most imp
 | `STATE_FILE_PATH` | Where the JSON state (with encrypted lists) is kept. |
 | `CLIENT_ORIGINS`, `CLIENT_URL` | Front-end addresses allowed to call the API. |
 | `DEMO_ACCOUNTS`, `EXPOSE_RESET_TOKEN` | Demo accounts and showing reset links in the page. **Set both to `false` in production.** |
+| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `MAIL_FROM` | Email server for password-reset links (for Gmail, use an App Password). Without `SMTP_HOST`, the link is printed in the server log. |
 | `AUTH_RATE_LIMIT`, `MAX_FAILED_LOGINS`, `LOCKOUT_MINUTES`, `BCRYPT_ROUNDS` | Sign-in protection. |
 | `OPENAI_API_KEY`, `OPENAI_MODEL`, `AI_TIMEOUT_MS` | Optional external AI. Only text with personal details removed is sent. |
 | `OCR_ENABLED`, `OCR_LANGUAGES` | Reading scanned files (`eng`, or `eng+nep`). |

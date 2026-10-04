@@ -12,7 +12,8 @@ export const reportImage = (lines: string[], format: 'png' | 'jpeg' = 'png'): Bu
   g.fillStyle = '#ffffff';
   g.fillRect(0, 0, width, canvas.height);
   g.fillStyle = '#111111';
-  g.font = '34px sans-serif';
+  // Name common fonts first: on some Windows machines plain "sans-serif" maps to a narrow display font OCR misreads
+  g.font = '34px Arial, "Liberation Sans", "DejaVu Sans", Helvetica, sans-serif';
   lines.forEach((t, i) => g.fillText(t, 50, 90 + i * 70));
   return format === 'png' ? canvas.toBuffer('image/png') : canvas.toBuffer('image/jpeg', 92);
 };

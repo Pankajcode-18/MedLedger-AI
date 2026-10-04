@@ -380,7 +380,8 @@ const loadPdfJs = (): Promise<PdfJs> => (pdfjsPromise ||= import('pdfjs-dist/leg
 
 const pdfjsAsset = (folder: string): string => {
   const pkg = require.resolve('pdfjs-dist/package.json');
-  return path.join(path.dirname(pkg), folder) + path.sep;
+  // pdf.js insists on "/" as the trailing separator, so Windows paths are written with forward slashes
+  return `${path.join(path.dirname(pkg), folder).split(path.sep).join('/')}/`;
 };
 
 interface TextItemLike {

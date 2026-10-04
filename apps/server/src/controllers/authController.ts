@@ -6,6 +6,7 @@ import { auditService } from '../services/auditService.js';
 import { userStore, DEMO_ACCOUNTS } from '../services/userStore.js';
 import { tokenService } from '../services/tokenService.js';
 import { loginGuard } from '../services/loginGuard.js';
+import { mailService } from '../services/mailService.js';
 import {
   registerUserSchema,
   adminCreateUserSchema,
@@ -370,7 +371,12 @@ export class AuthController {
     });
 
     const link = `${config.clientUrl}/reset-password?token=${token}`;
-    if (config.nodeEnv !== 'test') {
+    if (mailService.enabled) {
+      // sent in the background: waiting for the mail server would make known emails answer slower than unknown ones
+      mailService
+        .sendPasswordReset(user.email, user.name, link, config.passwordResetMinutes)
+        .catch((err) => console.error(`[PasswordReset] Could not email ${user.email}:`, (err as Error).message));
+    } else if (config.nodeEnv !== 'test') {
       // No email service is configured — the link is printed here instead.
       console.log(`[PasswordReset] Reset link for ${user.email} (valid ${config.passwordResetMinutes} min): ${link}`);
     }

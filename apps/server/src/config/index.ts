@@ -95,12 +95,22 @@ export const config = {
   lockoutMinutes: parseInt(process.env.LOCKOUT_MINUTES || '15', 10),
   passwordResetMinutes: parseInt(process.env.PASSWORD_RESET_MINUTES || '15', 10),
   /**
-   * There is no email service in this project, so outside production the reset token is
-   * returned in the API response (and printed in the server log) to make the flow demoable.
+   * Outside production the reset token is also returned in the API response (and printed in the
+   * server log when no email service is set up) to make the flow demoable.
    */
   exposeResetToken: (process.env.EXPOSE_RESET_TOKEN || (isProduction ? 'false' : 'true')) === 'true',
-  /** Where the reset link in the log points to. */
+  /** Where the reset link in the email (or the log) points to. */
   clientUrl: process.env.CLIENT_URL || 'http://localhost:8081',
+  /** Outgoing email for password-reset links. Without SMTP_HOST the link is printed in the server log. */
+  smtp: {
+    host: process.env.SMTP_HOST || '',
+    port: parseInt(process.env.SMTP_PORT || '587', 10),
+    /** true for port 465 (TLS from the start); false uses STARTTLS on 587. */
+    secure: (process.env.SMTP_SECURE || (process.env.SMTP_PORT === '465' ? 'true' : 'false')) === 'true',
+    user: process.env.SMTP_USER || '',
+    pass: process.env.SMTP_PASS || '',
+    from: process.env.MAIL_FROM || process.env.SMTP_USER || 'MedLedger AI <no-reply@medledger.local>'
+  },
   /** Seed the six demo accounts shown on the login page (off by default in production). */
   demoAccounts: (process.env.DEMO_ACCOUNTS || (isProduction ? 'false' : 'true')) === 'true',
   /** Browser origins allowed to call the API. */

@@ -73,7 +73,8 @@ async function waitFor<T>(fn: () => T | Promise<T>, ms = 20000): Promise<T> {
 
 before(async () => {
   if (!available) return;
-  if (!fs.existsSync(ARTIFACT)) execFileSync(process.execPath, [HARDHAT, 'compile'], { cwd: ROOT, stdio: 'ignore' });
+  // always compile (a no-op when up to date) so a stale saved build never gets deployed
+  execFileSync(process.execPath, [HARDHAT, 'compile'], { cwd: ROOT, stdio: 'ignore' });
   const port = await freePort();
   node = spawn(process.execPath, [HARDHAT, 'node', '--port', String(port)], { cwd: ROOT, stdio: 'ignore' });
   const rpc = `http://127.0.0.1:${port}`;

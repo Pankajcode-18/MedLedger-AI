@@ -306,7 +306,7 @@ describe('older records and keys', () => {
     assert.notEqual(keyService.currentKeyId, oldId);
     assert.equal((await get(`/api/records/${id}/download`, patient)).status, 200, 'old records readable during rotation');
 
-    const r = rotateMasterKey();
+    const r = await rotateMasterKey();
     assert.ok(r.rewrappedFiles >= 1);
     const rec = stateStore.getState().reports.find((x) => x.reportId === id)!;
     assert.equal(keyService.keyIdOf(rec.encryption!.wrappedKey), keyService.currentKeyId);

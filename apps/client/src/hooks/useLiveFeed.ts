@@ -11,10 +11,16 @@ import { AuditLog, MedicalRecord } from '../types/index.js';
 
 const REFRESH_MS = 30_000;
 
+/** Roles the server lets read the patient directory; everyone else would only get a 403. */
+const PATIENT_DIRECTORY_ROLES = ['doctor', 'hospital', 'hospital-admin', 'lab', 'insurance', 'admin', 'system-admin'];
+
 /** Directory of patient/doctor names so the feed can show a name instead of an ID. */
-const loadNames = async (): Promise<NameLookup> => {
+const loadNames = async (role: string): Promise<NameLookup> => {
   const names: NameLookup = {};
-  const [patients, doctors] = await Promise.allSettled([authApi.getPatients(), authApi.getDoctors()]);
+  const [patients, doctors] = await Promise.allSettled([
+    PATIENT_DIRECTORY_ROLES.includes(role) ? authApi.getPatients() : Promise.resolve([]),
+    authApi.getDoctors()
+  ]);
   if (patients.status === 'fulfilled' && Array.isArray(patients.value)) {
     patients.value.forEach((p) => (names[String(p.patientId)] = p.name));
   }
@@ -44,7 +50,7 @@ export const useLiveFeed = (): { refresh: () => Promise<void> } => {
       recordsApi.getRecords({ summary: true, limit: 20 }),
       consentRoles.includes(role) ? consentApi.status() : Promise.resolve(null),
       isAdmin ? adminApi.getAllAuditLogs() : adminApi.getMyActivity(),
-      loadNames(),
+      loadNames(role),
       settingsApi.get('inbox')
     ]);
     if (inboxRes.status === 'fulfilled') {

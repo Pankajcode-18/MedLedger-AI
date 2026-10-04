@@ -63,6 +63,38 @@ export interface IStoredUser {
  */
 const SAVE_DELAY_MS = Math.max(0, parseInt(process.env.STATE_SAVE_DELAY_MS || '100', 10) || 0);
 
+/**
+ * On Windows a rename over a file that another handle (an append, a virus scanner, a write still in flight)
+ * has open fails for a moment with EPERM, EBUSY or EACCES. Those are retried briefly; anything else is thrown.
+ */
+const RENAME_RETRY_CODES = new Set(['EPERM', 'EBUSY', 'EACCES']);
+const RENAME_ATTEMPTS = 10;
+const isRetryableRename = (err: unknown): boolean => RENAME_RETRY_CODES.has((err as NodeJS.ErrnoException)?.code || '');
+
+const renameSyncWithRetry = (from: string, to: string): void => {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      fs.renameSync(from, to);
+      return;
+    } catch (err) {
+      if (attempt >= RENAME_ATTEMPTS || !isRetryableRename(err)) throw err;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 20 * attempt);
+    }
+  }
+};
+
+const renameWithRetry = async (from: string, to: string): Promise<void> => {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      await fs.promises.rename(from, to);
+      return;
+    } catch (err) {
+      if (attempt >= RENAME_ATTEMPTS || !isRetryableRename(err)) throw err;
+      await new Promise((r) => setTimeout(r, 20 * attempt));
+    }
+  }
+};
+
 class StateStore {
   private stateFilePath: string;
   /** Audit entries are appended here (one encrypted line each) instead of rewriting the state file. */
@@ -267,7 +299,9 @@ class StateStore {
   }
 
   /** Re-wraps every note key with the current master key (see scripts/rotate-keys.ts). */
-  public rewrapSealedNotes(): number {
+  public async rewrapSealedNotes(): Promise<number> {
+    // an append still in flight keeps the audit file open, and Windows refuses to replace an open file
+    await this.auditQueue;
     this.sealedCache.clear();
     this.sealedListCache.clear();
     this.saveStateSync();
@@ -303,9 +337,11 @@ class StateStore {
   /** Re-encrypts every audit line under the current master key (used by key rotation). */
   public rewrapAuditFile(): number {
     const entries = this.memoryState.auditLogs || [];
+    // the rewritten file holds every entry, so lines still waiting to be appended must not be added again
+    this.auditPending.length = 0;
     const tmp = `${this.auditFilePath}.${process.pid}.tmp`;
     fs.writeFileSync(tmp, entries.map((e) => `${this.sealAudit(e)}\n`).join(''), { mode: 0o600 });
-    fs.renameSync(tmp, this.auditFilePath);
+    renameSyncWithRetry(tmp, this.auditFilePath);
     return entries.length;
   }
 
@@ -348,7 +384,7 @@ class StateStore {
     this.writing = (async () => {
       await fs.promises.mkdir(path.dirname(this.stateFilePath), { recursive: true });
       await fs.promises.writeFile(tmp, data, { encoding: 'utf8', mode: 0o600 });
-      await fs.promises.rename(tmp, this.stateFilePath);
+      await renameWithRetry(tmp, this.stateFilePath);
     })()
       .catch((err) => {
         this.dirty = true; // try again with the next change or flush
@@ -381,7 +417,7 @@ class StateStore {
       fs.mkdirSync(path.dirname(this.stateFilePath), { recursive: true });
       const tmp = `${this.stateFilePath}.${process.pid}.sync.tmp`;
       fs.writeFileSync(tmp, this.serialise(), { encoding: 'utf8', mode: 0o600 });
-      fs.renameSync(tmp, this.stateFilePath);
+      renameSyncWithRetry(tmp, this.stateFilePath);
       this.dirty = false;
     } catch (err) {
       console.error('[StateStore] Error saving state.json:', err);

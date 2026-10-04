@@ -45,7 +45,7 @@ export const migrateLegacyRecords = async (): Promise<{ encrypted: number; marke
  * MASTER_ENCRYPTION_KEYS_PREVIOUS), re-wrap every data key with the new master key.
  * Files are not re-encrypted; only the small wrapped keys change.
  */
-export const rotateMasterKey = (): { rewrappedFiles: number; resealedNotes: number; failed: string[]; currentKeyId: string } => {
+export const rotateMasterKey = async (): Promise<{ rewrappedFiles: number; resealedNotes: number; failed: string[]; currentKeyId: string }> => {
   let rewrappedFiles = 0;
   const failed: string[] = [];
   const current = keyService.currentKeyId;
@@ -63,6 +63,6 @@ export const rotateMasterKey = (): { rewrappedFiles: number; resealedNotes: numb
       console.warn(`[Keys] Could not re-wrap record ${r.reportId}:`, (err as Error).message);
     }
   }
-  const resealedNotes = stateStore.rewrapSealedNotes();
+  const resealedNotes = await stateStore.rewrapSealedNotes();
   return { rewrappedFiles, resealedNotes, failed, currentKeyId: current };
 };
